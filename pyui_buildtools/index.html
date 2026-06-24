@@ -545,17 +545,17 @@
 <h2 id="hot-reloading-layouts">Hot-Reloading Layouts</h2>
 <p>It gets hectic to compile layouts after each edit so PYUI comes with hotreloading feature to quickly rebuild your static layout file to show on screen.</p>
 <p>For Hot-Reloading a static layout:</p>
-<pre><code>python -m buildtools --hotreload &lt;xml-layout-file-path&gt;
+<pre><code>python -m PYUI.buildtools --hotreload &lt;xml-layout-file-path&gt;
 </code></pre>
 <p><strong>Result:</strong>
 <img alt="HotReload Example" src="../assets/hotreload.png" /></p>
 <p>Any change to the xml file will be instantly reflected in the window</p>
 <p>Additionally, if you want to keep the layout window always on top of your screen, you would like to use <strong>--keepontop</strong> flag.</p>
-<pre><code>python -m buildtools --hotreload &lt;xml-layout-file-path&gt; --keepontop
+<pre><code>python -m PYUI.buildtools --hotreload &lt;xml-layout-file-path&gt; --keepontop
 </code></pre>
 <h2 id="compiling-to-python-project">Compiling to python project</h2>
 <p>It is slower to compile whole project to .exe as it reqires pyinstaller to build executable. However for faster loading and debuging purposes, you can compile your project to a ready to use project to load your dynamic app in a single command.It is recomended to use this than compiling to exe often after each result. Compiled exe will be idential to this exactly.</p>
-<pre><code>python -m buildtools --compile &lt;xml-layout-file-path&gt;
+<pre><code>python -m PYUI.buildtools --compile &lt;xml-layout-file-path&gt;
 </code></pre>
 <p>A temporary folder will be created: <strong>build/temp_xyz</strong> (Check the last line of your terminal to get the folder) go to that folder and </p>
 <pre><code>python bootstrap.py
@@ -567,7 +567,7 @@
 <pre><code>pip install pyinstaller
 </code></pre>
 <p>Compile to Exe:</p>
-<pre><code>python -m buildtools --compileexe &lt;project-directory&gt;
+<pre><code>python -m PYUI.buildtools --compileexe &lt;project-directory&gt;
 </code></pre>
 <p>Important Extra flags for Executable compilation:</p>
 <ol>
