@@ -24,16 +24,17 @@ We will touch internals of framework later and in debugging section more.
 
 ## Installation
  1.You must have python with pip installed in your system right now PYUI is tested in windows and linux only.
- `pip install pyqt`
+ `pip install pyui-desktop`
  
 Thats it, it is all you need for installing PYUI
 
 ## Starting off with a boilerplate project
 
-    python -m pyui --config-project <Project Name> --target-dir <directory-path>
+    python -m PYUI.create <directory-path>
+    
 Thats it, go to the directory you mentioned and 
 
-    python buildtools.py --compileexe ./  --target DEBUG --name <project-name>
+    python -m PYUI.buildtools --compileexe ./  --target DEBUG --name <project-name>
   
   Go to the DEBUG directory made and execute
   

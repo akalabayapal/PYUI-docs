@@ -12,7 +12,7 @@ It gets hectic to compile layouts after each edit so PYUI comes with hotreloadin
 
 For Hot-Reloading a static layout:
 
-    python -m buildtools --hotreload <xml-layout-file-path>
+    python -m PYUI.buildtools --hotreload <xml-layout-file-path>
 
 **Result:**
 ![HotReload Example](assets/hotreload.png)
@@ -21,13 +21,13 @@ Any change to the xml file will be instantly reflected in the window
 
 Additionally, if you want to keep the layout window always on top of your screen, you would like to use **--keepontop** flag.
 
-    python -m buildtools --hotreload <xml-layout-file-path> --keepontop
+    python -m PYUI.buildtools --hotreload <xml-layout-file-path> --keepontop
 
 ## Compiling to python project
 
 It is slower to compile whole project to .exe as it reqires pyinstaller to build executable. However for faster loading and debuging purposes, you can compile your project to a ready to use project to load your dynamic app in a single command.It is recomended to use this than compiling to exe often after each result. Compiled exe will be idential to this exactly.
 
-    python -m buildtools --compile <xml-layout-file-path>
+    python -m PYUI.buildtools --compile <xml-layout-file-path>
 
 A temporary folder will be created: **build/temp_xyz** (Check the last line of your terminal to get the folder) go to that folder and 
 
@@ -45,7 +45,7 @@ Install **pyinstaller** (If not installed):
 
 Compile to Exe:
 
-    python -m buildtools --compileexe <project-directory> 
+    python -m PYUI.buildtools --compileexe <project-directory> 
 
 Important Extra flags for Executable compilation:
 
