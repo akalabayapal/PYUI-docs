@@ -580,14 +580,19 @@ We will touch internals of framework later and in debugging section more.</p>
  <code>pip install pyui-desktop</code></p>
 <p>Thats it, it is all you need for installing PYUI</p>
 <h2 id="starting-off-with-a-boilerplate-project">Starting off with a boilerplate project</h2>
-<pre><code>python -m PYUI.create &lt;directory-path&gt;
+<pre><code>mkdir HelloWorldApp
+python -m PYUI.create HelloWorldApp
 </code></pre>
-<p>Thats it, go to the directory you mentioned and </p>
-<pre><code>python -m PYUI.buildtools --compileexe ./  --target DEBUG --name &lt;project-name&gt;
+<p>Thats it, go to the directory you mentioned </p>
+<pre><code>cd HelloWorldApp
+</code></pre>
+<p>Now Compile for first time</p>
+<pre><code>python -m PYUI.buildtools --compileexe ./  --target DEBUG --name HelloWorldApp
 </code></pre>
 <p>Go to the DEBUG directory made and execute</p>
-<pre><code>&lt;Project-name&gt;.exe
+<pre><code>HelloWorldApp.exe
 </code></pre>
+<p><strong>Note:</strong> Replace 'HelloWorldApp' with the name of your project.</p>
 <p><strong>Result:</strong>
 <img alt="enter image description here" src="assets/hello.png" /></p>
 
