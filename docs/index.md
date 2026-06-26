@@ -30,15 +30,24 @@ Thats it, it is all you need for installing PYUI
 
 ## Starting off with a boilerplate project
 
-    python -m PYUI.create <directory-path>
+    mkdir HelloWorldApp
+    python -m PYUI.create HelloWorldApp
     
-Thats it, go to the directory you mentioned and 
+Thats it, go to the directory you mentioned 
 
-    python -m PYUI.buildtools --compileexe ./  --target DEBUG --name <project-name>
+    cd HelloWorldApp
+
+
+Now Compile for first time
+
+    python -m PYUI.buildtools --compileexe ./  --target DEBUG --name HelloWorldApp
   
   Go to the DEBUG directory made and execute
   
-    <Project-name>.exe
+    HelloWorldApp.exe
+
+**Note:** Replace 'HelloWorldApp' with the name of your project.
+
 
 **Result:**
 ![enter image description here](assets/hello.png)
