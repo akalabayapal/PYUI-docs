@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../2_pyui_buildtools/">
       
       
-        <link rel="next" href="../pyui_buildtools/">
+        <link rel="next" href="../PYUI%20XML%20LAYOUT%20GUIDE/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Project Structure - PYUI Guide</title>
+        <title>Configuring Tailwind - PYUI Guide</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#project-structure" class="md-skip">
+        <a href="#configuring-tailwind" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Project Structure
+              Configuring Tailwind
             
           </span>
         </div>
@@ -220,19 +220,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../1_project_struct/" class="md-nav__link">
         
   
   
@@ -248,7 +239,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -260,7 +250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pyui_buildtools/" class="md-nav__link">
+      <a href="../2_pyui_buildtools/" class="md-nav__link">
         
   
   
@@ -284,6 +274,43 @@
       
   
   
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuring Tailwind
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
   
   
     
@@ -295,10 +322,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -316,8 +343,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -383,6 +410,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PYUI%20XML%20LAYOUT%20GUIDE/xtendeding_PYUI_compiler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extending PYUI Compiler using settings.py
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -425,21 +480,23 @@
 
 
 
-<h1 id="project-structure">Project Structure</h1>
-<p>After creating a project (Refer getting started) you get following folders and files</p>
-<pre><code>./layouts
-,/layouts/components
-./layouts/css
-./layouts/JS
-./code
-./custom_settings.py
+<h1 id="configuring-tailwind">Configuring Tailwind</h1>
+<p><code>PYUI</code> supports Tailwind directly.You can start using <code>Tailwind</code> in your project just by following few steps.</p>
+<ol>
+<li>
+<p>Grab a stable tailwind executable from <a href="https://github.com/tailwindlabs/tailwindcss/releases/">TailwindCss Releases</a></p>
+</li>
+<li>
+<p>Enable Tailwind inside your <code>settings.py</code> file under <code>CompilerSettings</code> class</p>
+<p>class CompilerSettings:</p>
+<pre><code>    TAILWIND_ENABLED = True # &lt;-- Change to True
 </code></pre>
-<p><strong>./layouts:</strong> This folder contains the .xml files for defining layouts</p>
-<p><strong>./layouts/components:</strong> For the components that can be reused are stored here</p>
-<p><strong>./code:</strong> your python code files</p>
-<p><strong>./custom_settings.py</strong>:The customizable settings that can be used</p>
-<p><strong>./layouts/JS:</strong> For adding additional JS for extensibility or functionality(optional)</p>
-<p><strong>./layouts/css:</strong> For adding custom styling with css</p>
+</li>
+<li>
+<p>Now when you execute <code>PYUI.buildtools</code> add a extra <code>--settings settings.py --tailwindpath &lt;your-tailwind-exe-path&gt;</code></p>
+</li>
+</ol>
+<p>The buildtools passes the html files to tailwind to compile <code>global.css</code>.Now you can use any tailwind freely.</p>
 
 
 
