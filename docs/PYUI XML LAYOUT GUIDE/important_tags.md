@@ -128,7 +128,7 @@ Example:
 
     <video id="video-id" style-class="video-style" src="resources/video.mp4"></video>
 
-**Very less tags compatitable? Wait you can very easily extend tags to support more html tags.Refer:** [Extending Tags for PYUI](path.xml)
+**Very less tags compatitable? Wait you can very easily extend tags to support more html tags.Refer:** [Extending Tags for PYUI](#)
 
 
 ### Window Adjustment Tags
@@ -183,7 +183,7 @@ This tags are defined in this format
 
 #### 1. metadata
 
-To store version of app used. In future builds it will support more tags. However you can even [extend this using settings.py](path/xml)
+To store version of app used. In future builds it will support more tags. However you can even [extend this using settings.py](#)
 
 - **version:** App version
 

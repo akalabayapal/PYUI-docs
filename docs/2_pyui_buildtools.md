@@ -14,13 +14,13 @@ For Hot-Reloading a static layout:
 
     python -m PYUI.buildtools --hotreload layouts/index.xml
 
-**Note:** Replace 'layouts/index.xml' with any valid *pyui layout xml file*.
+**Note:** Replace `layouts/index.xml` with any valid *pyui layout xml file*.
 
 If your layout uses styles that are not present in layouts/styles/ folder then 
 
     python -m PYUI.buildtools --hotreload layouts/index.xml --stylepath <custom-style-folder>
 
-**Note:** Replace 'layouts/index.xml' with any valid *pyui layout xml file*.
+**Note:** Replace `layouts/index.xml` with any valid *pyui layout xml file*.
 
 
 **Result:**
@@ -28,9 +28,11 @@ If your layout uses styles that are not present in layouts/styles/ folder then
 
 Any change to the xml file will be instantly reflected in the window
 
-Additionally, if you want to keep the layout window always on top of your screen, you would like to use **--keepontop** flag.
+Additionally, if you want to keep the layout window always on top of your screen, you would like to use `--keepontop` flag.
 
     python -m PYUI.buildtools --hotreload <xml-layout-file-path> --keepontop
+
+**Note:** use `--settings settings.py` or  any custom PYUI settings file.(To learn about settings file visit:[Using settings.py](#))
 
 ## Compiling to python project
 
@@ -40,7 +42,7 @@ Visit your project directory
 
     cd HelloWorldApp
 
-**Note:** Replace 'HelloWorldApp' with the name of your project directory.
+**Note:** Replace `HelloWorldApp` with the name of your project directory.
 
 Compile and run your project in one go
 
@@ -50,8 +52,11 @@ To compile to python project without executing instantly
 
     python -m PYUI.buildtools --compile ./ 
 
+**Note:** use `--settings settings.py` or  any custom PYUI settings file.(To learn about settings file visit:[Using settings.py](#))
 
-A temporary folder will be created: **build/temp_xyz.abcd** (Check the last line of your terminal to get the folder) go to that folder and 
+
+
+A temporary folder will be created: `build/temp_xyz.abcd` (Check the last line of your terminal to get the folder) go to that folder and 
 
     python bootstrap.py
 
@@ -90,5 +95,5 @@ Important Extra flags for Executable compilation:
     1. Define the name of the exe
     2. DEFAULT:  **PYUICommonExecutable**
 
-4. **--settings** Any Custom PYUI settings file.(To learn about settings file visit:[Using settings.py](rendompath.path))
+4. **--settings** Any Custom PYUI settings file.(To learn about settings file visit:[Using settings.py](#))
 
