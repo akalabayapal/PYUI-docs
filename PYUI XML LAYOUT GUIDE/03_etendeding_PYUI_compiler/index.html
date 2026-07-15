@@ -9,25 +9,25 @@
       
       
       
-        <link rel="prev" href="../1_project_struct/">
+        <link rel="prev" href="../02_important_tags/">
       
       
-        <link rel="next" href="../3_config_tailwind/">
+        <link rel="next" href="../04_PYUI_Components/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>PYUI Buildtools - PYUI Guide</title>
+        <title>Extending PYUI Compiler using settings.py - PYUI Guide</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -46,7 +46,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pyui-buildtools" class="md-skip">
+        <a href="#extending-pyui-compiler-using-settingspy" class="md-skip">
           Skip to content
         </a>
       
@@ -80,7 +80,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="PYUI Guide" class="md-header__button md-logo" aria-label="PYUI Guide" data-md-component="logo">
+    <a href="../.." title="PYUI Guide" class="md-header__button md-logo" aria-label="PYUI Guide" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              PYUI Buildtools
+              Extending PYUI Compiler using settings.py
             
           </span>
         </div>
@@ -178,7 +178,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="PYUI Guide" class="md-nav__button md-logo" aria-label="PYUI Guide" data-md-component="logo">
+    <a href="../.." title="PYUI Guide" class="md-nav__button md-logo" aria-label="PYUI Guide" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -196,7 +196,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -223,7 +223,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../1_project_struct/" class="md-nav__link">
+      <a href="../../1_project_struct/" class="md-nav__link">
         
   
   
@@ -247,37 +247,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    PYUI Buildtools
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../2_pyui_buildtools/" class="md-nav__link">
         
   
   
@@ -293,59 +266,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#hot-reloading-layouts" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hot-Reloading Layouts
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#compiling-to-python-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Compiling to python project
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#compiling-to-executable" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Compiling to executable
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -357,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../3_config_tailwind/" class="md-nav__link">
+      <a href="../../3_config_tailwind/" class="md-nav__link">
         
   
   
@@ -431,7 +351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../PYUI%20PYTHON%20LIBARY/1_index/" class="md-nav__link">
+      <a href="../../PYUI%20PYTHON%20LIBARY/1_index/" class="md-nav__link">
         
   
   
@@ -459,7 +379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../PYUI%20PYTHON%20LIBARY/2_dom_manipulation/" class="md-nav__link">
+      <a href="../../PYUI%20PYTHON%20LIBARY/2_dom_manipulation/" class="md-nav__link">
         
   
   
@@ -487,7 +407,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../PYUI%20PYTHON%20LIBARY/3_events_and_callbacks/" class="md-nav__link">
+      <a href="../../PYUI%20PYTHON%20LIBARY/3_events_and_callbacks/" class="md-nav__link">
         
   
   
@@ -519,18 +439,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -551,7 +473,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -569,7 +491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../PYUI%20XML%20LAYOUT%20GUIDE/01_index/" class="md-nav__link">
+      <a href="../01_index/" class="md-nav__link">
         
   
   
@@ -597,7 +519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../PYUI%20XML%20LAYOUT%20GUIDE/02_important_tags/" class="md-nav__link">
+      <a href="../02_important_tags/" class="md-nav__link">
         
   
   
@@ -622,10 +544,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../PYUI%20XML%20LAYOUT%20GUIDE/03_etendeding_PYUI_compiler/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extending PYUI Compiler using settings.py
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -641,6 +590,115 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#elemental-and-container-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Elemental and Container Tags
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-layout-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding Layout validation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#addingremoving-a-attribute-in-allowed-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding/Removing a attribute in allowed list
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding/Removing a attribute in allowed list">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-new-elemental-tag-in-pyui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding New Elemental Tag in PYUI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding New Elemental Tag in PYUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-new-container-tag-in-pyui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding New Container Tag in PYUI
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -653,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../PYUI%20XML%20LAYOUT%20GUIDE/04_PYUI_Components/" class="md-nav__link">
+      <a href="../04_PYUI_Components/" class="md-nav__link">
         
   
   
@@ -708,10 +766,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#hot-reloading-layouts" class="md-nav__link">
+  <a href="#elemental-and-container-tags" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hot-Reloading Layouts
+        Elemental and Container Tags
       
     </span>
   </a>
@@ -719,10 +777,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#compiling-to-python-project" class="md-nav__link">
+  <a href="#understanding-layout-validation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Compiling to python project
+        Understanding Layout validation
       
     </span>
   </a>
@@ -730,10 +788,66 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#compiling-to-executable" class="md-nav__link">
+  <a href="#addingremoving-a-attribute-in-allowed-list" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Compiling to executable
+        Adding/Removing a attribute in allowed list
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding/Removing a attribute in allowed list">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-new-elemental-tag-in-pyui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding New Elemental Tag in PYUI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding New Elemental Tag in PYUI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-new-container-tag-in-pyui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding New Container Tag in PYUI
       
     </span>
   </a>
@@ -757,82 +871,109 @@
 
 
 
-<h1 id="pyui-buildtools">PYUI Buildtools</h1>
-<p>PYUI comes with few simple buildtools to make life of developer easy.</p>
-<pre><code>1. HotReloading Layouts
-2. Compile to executable python project
-3. Compile to executable
-</code></pre>
-<h2 id="hot-reloading-layouts">Hot-Reloading Layouts</h2>
-<p>It gets hectic to compile layouts after each edit so PYUI comes with hotreloading feature to quickly rebuild your static layout file to show on screen.</p>
-<p>For Hot-Reloading a static layout:</p>
-<pre><code>python -m PYUI.buildtools --hotreload layouts/index.xml
-</code></pre>
-<p><strong>Note:</strong> Replace <code>layouts/index.xml</code> with any valid <em>pyui layout xml file</em>.</p>
-<p>If your layout uses styles that are not present in layouts/styles/ folder then </p>
-<pre><code>python -m PYUI.buildtools --hotreload layouts/index.xml --stylepath &lt;custom-style-folder&gt;
-</code></pre>
-<p><strong>Note:</strong> Replace <code>layouts/index.xml</code> with any valid <em>pyui layout xml file</em>.</p>
-<p><strong>Result:</strong>
-<img alt="HotReload Example" src="../assets/hotreload.png" /></p>
-<p>Any change to the xml file will be instantly reflected in the window</p>
-<p>Additionally, if you want to keep the layout window always on top of your screen, you would like to use <code>--keepontop</code> flag.</p>
-<pre><code>python -m PYUI.buildtools --hotreload &lt;xml-layout-file-path&gt; --keepontop
-</code></pre>
-<p><strong>Note:</strong> use <code>--settings settings.py</code> or  any custom PYUI settings file.(To learn about settings file visit:<a href="#">Using settings.py</a>)</p>
-<h2 id="compiling-to-python-project">Compiling to python project</h2>
-<p>It is slower to compile whole project to .exe as it reqires pyinstaller to build executable. However for faster loading and debuging purposes, you can compile your project to a ready to use project to load your dynamic app in a single command.It is recomended to use this than compiling to exe often after each result. Compiled exe will be idential to this exactly.</p>
-<p>Visit your project directory</p>
-<pre><code>cd HelloWorldApp
-</code></pre>
-<p><strong>Note:</strong> Replace <code>HelloWorldApp</code> with the name of your project directory.</p>
-<p>Compile and run your project in one go</p>
-<pre><code>python -m PYUI.buildtools --compile ./ --run
-</code></pre>
-<p>To compile to python project without executing instantly</p>
-<pre><code>python -m PYUI.buildtools --compile ./
-</code></pre>
-<p><strong>Note:</strong> use <code>--settings settings.py</code> or  any custom PYUI settings file.(To learn about settings file visit:<a href="#">Using settings.py</a>)</p>
-<p>A temporary folder will be created: <code>build/temp_xyz.abcd</code> (Check the last line of your terminal to get the folder) go to that folder and </p>
-<pre><code>python bootstrap.py
-</code></pre>
-<p>The app will load as it is in compiled executable stage.</p>
-<h2 id="compiling-to-executable">Compiling to executable</h2>
-<p>For distribution purposes it is absolutely important to build project into exe.</p>
-<p>Install <strong>pyinstaller</strong> (If not installed):</p>
-<pre><code>pip install pyinstaller
-</code></pre>
-<p>Go to your project directory</p>
-<pre><code>cd HelloWorldApp
-</code></pre>
-<p><strong>Note:</strong> Replace 'HelloWorldApp' with the name of your project directory.</p>
-<p>Compile to Exe:</p>
-<pre><code>python -m PYUI.buildtools --compileexe &lt;project-directory&gt;
-</code></pre>
-<p>Important Extra flags for Executable compilation:</p>
+<h1 id="extending-pyui-compiler-using-settingspy">Extending PYUI Compiler using settings.py</h1>
+<p>PYUI uses strict compilation time validation to protect your layout and give safer and stable layout.So only few tags are allowed right now in the compiler, but you can safely use more HTML tags directly by adding few lines in <code>settings.py</code> file in your project directory.</p>
+<h2 id="elemental-and-container-tags">Elemental and Container Tags</h2>
+<p>PYUI differentiates between two types of tags.</p>
 <ol>
 <li>
-<p><strong>--target</strong></p>
+<p><strong>Elemental Tags:</strong> This are the buttons,inputs,Text etc. In this tags all properties even text is attribite defined. If you add elements inside this tags it will be ignored by compiler. This Tags are defined in <code>TAG_RULES_HASHMAP</code> in <code>CompilerSettings</code> class in <code>settings.py</code>.</p>
+</li>
+<li>
+<p><strong>Container Tags:</strong> This are the tags to hold everal Elemental tags inside them.They can contain other Elemental or Contianer Tags inside them. This Tags are additionally defined in <code>LAYOUT_CONTAINER_TAGS</code> in <code>CompilerSettings</code> class in <code>settings.py</code>.</p>
+</li>
+</ol>
+<h2 id="understanding-layout-validation">Understanding Layout validation</h2>
+<p>Before diving into how to add tags and attributes in <code>PYUI XML</code> it is important to understand role of three objects in <code>settings.py</code>.</p>
 <ol>
-<li>DEBUG: For general purpose debuging purposes</li>
-<li>RELEASE: For release</li>
-<li>Default: <strong>DEBUG</strong></li>
+<li>
+<p>PYUI compiler makes a document tree and traverses to check if all nodes Tags are present in either <code>TAG_RULES_HASHMAP</code> or <code>LAYOUT_CONTAINER_TAGS</code>. If it doesn't it stops compilation and throws error.</p>
+</li>
+<li>
+<p>PYUI Compiler also checks the attributes of the tags and checks if those attributes are allowed in the <code>TAG_RULES_HASHMAP</code> dictionary under the particiular tag.</p>
+</li>
+<li>
+<p>PYUI Converter uses <code>HTML_TAG_CONVERSION_MAP</code> to change PYUI XML to HTML using this map.All attributes except <code>style-class</code> and innerText remains same.</p>
+<ul>
+<li>style-class gets changed to class in pure html.</li>
+<li>innerText gets branched out to make it the actual innerText of that tag.</li>
+</ul>
+</li>
 </ol>
-</li>
-<li>
-<p><strong>--console</strong> To keep showing console in compiled executable</p>
-</li>
-<li>
-<p><strong>--name</strong></p>
+<h2 id="addingremoving-a-attribute-in-allowed-list">Adding/Removing a attribute in allowed list</h2>
+<p>1.Find out the tag in  <code>TAG_RULES_HASHMAP</code> dictionary in settings.py under <code>CompilerSettings</code> class.</p>
+<p>2.You will find a repective <code>set</code> object for the tag in <code>TAG_RULES_HASHMAP</code>. This set contains all allowed attributes for the tag.</p>
+<p>3.Add or remove attributes inside the set and save <code>settings.py</code></p>
+<h3 id="example">Example</h3>
+<p>Consider the tag <code>Button</code>:</p>
+<pre><code>    {
+    .....
+    "Button": {"innerText", "style-class", "id"},
+    .....
+    }
+</code></pre>
+<p>In button this 3 attributes are allowed.But if I want to add a new attribute to allowed list let's say <code>attribute_custom</code>. I need to update it like the following:</p>
+<pre><code>    {
+    .....
+    "Button": {"innerText", "style-class", "id","attribute_custom"}, # &lt;-- Custom attribute added
+    .....
+    }
+</code></pre>
+<p>That is it.. Now compiler knows to allow <code>attribute_custom</code>.</p>
+<p><strong>Note:</strong> To run compilation/hot-reloading with new settings use <code>--settings settings.py</code> tag while compilation or hot-reloading.</p>
+<h2 id="adding-new-elemental-tag-in-pyui">Adding New Elemental Tag in PYUI</h2>
 <ol>
-<li>Define the name of the exe</li>
-<li>DEFAULT:  <strong>PYUICommonExecutable</strong></li>
-</ol>
+<li>
+<p>Visit <code>TAG_RULES_HASHMAP</code> dictionary. You will find all tags that are allowed.</p>
 </li>
 <li>
-<p><strong>--settings</strong> Any Custom PYUI settings file.(To learn about settings file visit:<a href="#">Using settings.py</a>)</p>
+<p>Add your new tag inside dictionary.</p>
+</li>
+<li>
+<p>Add the html equivalent tag of it in <code>HTML_TAG_CONVERSION_MAP</code>.</p>
 </li>
 </ol>
+<h3 id="example_1">Example</h3>
+<p>Consider <code>TAG_RULES_HASHMAP</code></p>
+<pre><code>TAG_RULES_HASHMAP = {
+
+......
+......
+
+# --- NEW MEDIA TAGS ---
+"img": {"id", "style-class", "src", "alt", "width", "height"},
+"video": {"id", "style-class", "src", "controls", "autoplay", "loop", "muted", "poster", "width", "height"},
+"audio": {"id", "style-class", "src", "controls", "autoplay", "loop", "muted"}
+
+# ---- NEW TAG ADDED ---- #
+"custom_tag":set() # &lt;--- Custom Tag
+
+}
+</code></pre>
+<p>Then go to <code>HTML_TAG_CONVERSION_MAP</code> and add HTML equivalent tag for <code>custom_tag</code></p>
+<pre><code>HTML_TAG_CONVERSION_MAP = {
+
+    .....
+    "br": "br",
+    "Para":"p",
+    # --- NEW MEDIA MAPPINGS ---
+    "img": "img",
+    "video": "video",
+    "audio": "audio",
+
+    "custom_tag":"h1" # &lt;-- New tag 'custom_tag' will get converted to a static html `h1` upon compilation
+
+}
+</code></pre>
+<p>That is it. Custom Tag is added. Use <a href="#addingremoving-a-attribute-in-allowed-list">Adding/Removing a attribute in allowed list </a> reference to add attributes to newly created tag.</p>
+<p><strong>Note:</strong> To run compilation/hot-reloading with new settings use <code>--settings settings.py</code> tag while compilation or hot-reloading.</p>
+<h2 id="adding-new-container-tag-in-pyui">Adding New Container Tag in PYUI</h2>
+<p>For adding a new Container Tag in PYUI first follow steps given in <a href="#adding-new-elemental-tag-in-pyui">Adding New Elemental Tag in PYUI</a></p>
+<p>Then, visit <code>LAYOUT_CONTAINER_TAGS</code> in <code>settings.py</code> under <code>CompilerSettings</code> class</p>
+<pre><code>LAYOUT_CONTAINER_TAGS = {"main-content", "window","container",
+"pyui","custom_tags" } # &lt;-- `custom_tags` added
+</code></pre>
+<p><strong>Note:</strong> To run compilation/hot-reloading with new settings use <code>--settings settings.py</code> tag while compilation or hot-reloading.</p>
 
 
 
@@ -882,10 +1023,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

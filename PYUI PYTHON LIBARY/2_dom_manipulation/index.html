@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../1_index/">
       
       
-        <link rel="next" href="../xtendeding_PYUI_compiler/">
+        <link rel="next" href="../3_events_and_callbacks/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Boleplate Layout and Important Tags - PYUI Guide</title>
+        <title>Handling DOM Manipulation using PYUI - PYUI Guide</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#boleplate-layout-and-important-tags" class="md-skip">
+        <a href="#handling-dom-manipulation-using-pyui" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Boleplate Layout and Important Tags
+              Handling DOM Manipulation using PYUI
             
           </span>
         </div>
@@ -324,7 +324,7 @@
   <span class="md-ellipsis">
     
   
-    PYUI XML LAYOUT GUIDE
+    PYUI PYTHON LIBARY
   
 
     
@@ -340,7 +340,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    PYUI XML LAYOUT GUIDE
+    PYUI PYTHON LIBARY
   
 
           </label>
@@ -353,14 +353,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../1_index/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Getting Started with PYUI Layout XML
+    Introduction to PYUI Python Interface
   
 
     
@@ -397,7 +397,7 @@
   <span class="md-ellipsis">
     
   
-    Boleplate Layout and Important Tags
+    Handling DOM Manipulation using PYUI
   
 
     
@@ -415,7 +415,7 @@
   <span class="md-ellipsis">
     
   
-    Boleplate Layout and Important Tags
+    Handling DOM Manipulation using PYUI
   
 
     
@@ -441,189 +441,67 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#important-tags" class="md-nav__link">
+  <a href="#understanding-boilerplate" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Important Tags
+        Understanding Boilerplate
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Important Tags">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-standard-element-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using standard Element Class
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using standard Element Class">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#component-tags" class="md-nav__link">
+  <a href="#style-and-attributes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Component Tags
+        style and attributes
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Component Tags">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initiating-by-using-a-element-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initiating by using a Element class
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-dom-manipulation-api-reference-and-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common DOM manipulation api reference and example
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common DOM manipulation api reference and example">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-text" class="md-nav__link">
+  <a href="#dynamic-attributestyle-changing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Text
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-button" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Button
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-input" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Input
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-para-paragraph-tag" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Para (Paragraph tag)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-br" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Br
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-img-image-tag" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. img (Image tag)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-video" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7. video
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#window-adjustment-tags" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Window Adjustment Tags
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Window Adjustment Tags">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-style" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. style
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-main-content" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. main-content
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-window" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. window:
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#form-adjustement-tags" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Form Adjustement Tags
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Form Adjustement Tags">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-metadata" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. metadata
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-form-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Form settings
+        Dynamic attribute/style changing
       
     </span>
   </a>
@@ -637,6 +515,28 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-procedural-pyui-api-calls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Procedural PYUI API calls
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tradeoffs-and-when-to-use-what" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tradeoff's and when to use what
+      
+    </span>
+  </a>
   
 </li>
       
@@ -656,7 +556,145 @@
   
   
     <li class="md-nav__item">
-      <a href="../xtendeding_PYUI_compiler/" class="md-nav__link">
+      <a href="../3_events_and_callbacks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DOM Event Handling, Callbacks and Threading model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PYUI XML LAYOUT GUIDE
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    PYUI XML LAYOUT GUIDE
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYUI%20XML%20LAYOUT%20GUIDE/01_index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started with PYUI Layout XML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYUI%20XML%20LAYOUT%20GUIDE/02_important_tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boleplate Layout and Important Tags
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYUI%20XML%20LAYOUT%20GUIDE/03_etendeding_PYUI_compiler/" class="md-nav__link">
         
   
   
@@ -664,6 +702,34 @@
     
   
     Extending PYUI Compiler using settings.py
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYUI%20XML%20LAYOUT%20GUIDE/04_PYUI_Components/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reusing Layouts using Components
   
 
     
@@ -711,189 +777,67 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#important-tags" class="md-nav__link">
+  <a href="#understanding-boilerplate" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Important Tags
+        Understanding Boilerplate
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Important Tags">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-standard-element-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using standard Element Class
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using standard Element Class">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#component-tags" class="md-nav__link">
+  <a href="#style-and-attributes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Component Tags
+        style and attributes
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Component Tags">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initiating-by-using-a-element-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initiating by using a Element class
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-dom-manipulation-api-reference-and-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common DOM manipulation api reference and example
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common DOM manipulation api reference and example">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-text" class="md-nav__link">
+  <a href="#dynamic-attributestyle-changing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Text
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-button" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Button
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-input" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Input
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-para-paragraph-tag" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Para (Paragraph tag)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-br" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Br
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-img-image-tag" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        6. img (Image tag)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-video" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        7. video
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#window-adjustment-tags" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Window Adjustment Tags
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Window Adjustment Tags">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-style" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. style
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-main-content" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. main-content
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-window" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. window:
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#form-adjustement-tags" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Form Adjustement Tags
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Form Adjustement Tags">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-metadata" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. metadata
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-form-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Form settings
+        Dynamic attribute/style changing
       
     </span>
   </a>
@@ -907,6 +851,28 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-procedural-pyui-api-calls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Procedural PYUI API calls
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tradeoffs-and-when-to-use-what" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tradeoff's and when to use what
+      
+    </span>
+  </a>
   
 </li>
       
@@ -927,180 +893,193 @@
 
 
 
-<h1 id="boleplate-layout-and-important-tags">Boleplate Layout and Important Tags</h1>
-<p>You can get started with a new layout by using this:</p>
-<pre><code>&lt;pyui&gt;
-&lt;metadata&gt;
-&lt;version&gt;1.0.0&lt;/version&gt;
-&lt;/metadata&gt;
-&lt;form-settings&gt;
-&lt;title&gt;PyUI Portal - Hello World&lt;/title&gt;
-&lt;/form-settings&gt;
-&lt;main-content default-active-window="boilderplateview"&gt;
-&lt;window id="boilderplateview"&gt;
+<h1 id="handling-dom-manipulation-using-pyui">Handling DOM Manipulation using PYUI</h1>
+<p>PYUI provides functionality for setting or getting DOM <code>attributes</code> and <code>properties</code>. This can be achived in multiple ways and each of them has there importance. We will cover them one by one.</p>
+<h2 id="understanding-boilerplate">Understanding Boilerplate</h2>
+<pre><code>from PYUI.Package.PYUI import PYUI,Element,Component,cpath
 
-&lt;/window&gt;
-&lt;/main-content&gt;
-&lt;/pyui&gt;
+'''
+Element: OPP facade over procedural PYUI
+Component: Add and remove dynamic components from UI
+cpath: helps is easy resolving component ids you need not write "component_id_element_id" better use cpath(component_id,    element_id)
+both are equivalent.
+'''
+
+class App:
+
+    def __init__(self,obj:PYUI):
+
+        '''
+        Entry point of App class.
+        Use this class to work with index.xml
+        '''
+        self.pyui = obj
+
+
+def entry(obj:PYUI):
+
+    """
+    This is the entry point for your form index.xml
+    You can write procedural code using this entrypoint by deleting OPP function. Or use the boilerplate App class
+    You can rename the Class to anything
+    """
+    App(obj) # executing the app class
 </code></pre>
+<p>After initiating the environment. <code>bootstrap.py</code> loads your python code file and executes <code>entry</code> function. Prior to <code>PYUI 0.6</code> the PYUI mostly gave you a functional boilerplate. But from <code>PYUI 0.6</code> onwards it is recomended to use a <code>OOP</code> based strucure.So <code>entry</code> functio calls the <code>App</code> class. It is recomended to write code using this class.</p>
+<h2 id="using-standard-element-class">Using standard Element Class</h2>
+<p>The OOP Element class provides easy way to get and set DOM properties.</p>
+<h3 id="style-and-attributes">style and attributes</h3>
+<p><code>.style</code> and <code>.attrib</code> are two namespaces inside the <code>Element</code> class this helps to set and get <code>DOM properties and attributes</code>.</p>
 <ol>
-<li><strong>pyui:</strong> All layout files(except components) must be wrapped inside the pyui tag</li>
-<li><strong>version:</strong> The current xml version</li>
-<li><strong>form-settings:</strong> this section contains the startup forms layout settings (discussed later).</li>
-<li><strong>main-content:</strong> This contains all windows/views of the form both active and inactive. the default-active-window is the window/view that is shown at start of the form</li>
-<li><strong>window:</strong> All components of a view/window is wrapped inside this tag. All windows must have a unique <strong>id</strong>.</li>
+<li><strong>.style:</strong> This is used to get and set styles for elements. Use cammel case for hypened properties.</li>
+<li><strong>.atrrib:</strong> This is used to get and set both <code>attributes</code> and <code>properties</code> for a element in PYUI.</li>
 </ol>
-<h2 id="important-tags">Important Tags</h2>
-<p>All tags present in html are not possible to be supported in v1.0. However you can easily add new tags with few changes in settings (Refer <em>Adding custom tags to compiler and maping them to converter</em>)</p>
-<h3 id="component-tags">Component Tags</h3>
-<h4 id="1-text">1. Text</h4>
-<p>This is used to write text in the window. Equivalent to <em>span</em> in html.</p>
-<p>Attributes supported:</p>
-<ul>
-<li><strong>id:</strong> For unique identification of the element</li>
-<li><strong>innerText:</strong> The text to be displayed</li>
-<li><strong>style-class:</strong> Equivalent to class attribute in html. This is to define all classes in a string.</li>
-</ul>
-<p>Example:</p>
-<pre><code>&lt;Text id="example-text" style-class="text-style" innerText="Hello World"&gt;&lt;/Text&gt;
+<p><strong>Note:</strong> If you are completely new to HTML attributes, properties and styles please refer to a standard HTML </p>
+<h3 id="initiating-by-using-a-element-class">Initiating by using a Element class</h3>
+<pre><code>e = Element(id,self.pyui)
 </code></pre>
-<h4 id="2-button">2. Button</h4>
-<p>For adding button to the wndow. Equivalent to <em>button</em> in html.</p>
-<p>Attributes supported:</p>
-<ul>
-<li><strong>id:</strong> For unique identification of the element</li>
-<li><strong>innerText:</strong> The text to be displayed</li>
-<li><strong>style-class:</strong> Equivalent to class attribute in html. This is to define all classes in a string.</li>
-</ul>
-<p>Example:</p>
-<pre><code>&lt;Button id="example-button" style-class="button-style" innerText="Click Here"&gt;&lt;/Button&gt;
+<p>This makes a instance for the given <code>id</code>. Using this instance you can perform all kinds of dom manipulation</p>
+<h3 id="common-dom-manipulation-api-reference-and-example">Common DOM manipulation api reference and example</h3>
+<ol>
+<li>
+<p><strong>Changing innertext for a component</strong></p>
+<pre><code>e.text = 'new_text'
 </code></pre>
-<h4 id="3-input">3. Input</h4>
-<p>For adding input field to the window. Equivalent to <em>button</em> in html.</p>
-<p>Attributes supported:</p>
-<ul>
-<li><strong>id:</strong> For unique identification of the element</li>
-<li><strong>style-class:</strong> Equivalent to class attribute in html. This is to define all classes in a string.</li>
-<li><strong>placeholder:</strong> For the input placeholder</li>
-<li><strong>type:</strong> The input type. Supports the html input types (text,password,options etc)</li>
-</ul>
-<p>Example:</p>
-<pre><code>&lt;Input id="example-input" style-class="input-style" placeholder="input placeholder" type="text"&gt;&lt;/Input&gt;
-</code></pre>
-<h4 id="4-para-paragraph-tag">4. Para (Paragraph tag)</h4>
-<p>For adding input field to the window. Eqivalent to <em>p</em> in html.</p>
-<p>Attributes supported:</p>
-<ul>
-<li><strong>id:</strong> For unique identification of the element</li>
-<li><strong>innerText:</strong> The text to be displayed</li>
-<li><strong>style-class:</strong> Equivalent to class attribute in html. This is to define all classes in a string.</li>
-</ul>
-<p>Example: <a href="#1-text">Same as Text</a></p>
-<h4 id="5-br">5. Br</h4>
-<p>For making a space vertically between two components. Eqivalent to <em>br</em> in the html.</p>
-<p>Example:</p>
-<pre><code>&lt;br&gt;&lt;/br&gt;
-</code></pre>
-<h4 id="6-img-image-tag">6. img (Image tag)</h4>
-<p>For adding image to window. Equivalent to <em>img</em> in the html.</p>
-<p>Attributes supported:</p>
-<ul>
-<li><strong>id:</strong> For unique identification of the element</li>
-<li><strong>style-class:</strong> Equivalent to class attribute in html. This is to define all classes in a string.</li>
-<li><strong>src:</strong> Source of image file.</li>
-<li><strong>alt:</strong> Alternate title to show when source is not available.</li>
-<li><strong>width:</strong> Width of the image </li>
-<li><strong>height:</strong> Height of the image</li>
-</ul>
-<p>Example:</p>
-<pre><code>&lt;img id="image-id" style-class="img-style" src="resources/img.png" alt="Image can not be loaded"&gt;&lt;/img&gt;
-</code></pre>
-<h4 id="7-video">7. video</h4>
-<p>For playing videos in window. Equivalent to <em>video</em> in html.</p>
-<p>Attributes supported:</p>
-<ul>
-<li><strong>id:</strong> For unique identification of the element</li>
-<li><strong>style-class:</strong> Equivalent to class attribute in html. This is to define all classes in a string.</li>
-<li><strong>src:</strong> Source of video file.</li>
-<li><strong>controls:</strong> Controls for the video. See Html documentation for this attribute.</li>
-<li><strong>autoplay:</strong> To autoplay on window load.</li>
-<li><strong>loop:</strong> To play the video to loop.</li>
-<li><strong>muted:</strong> To keep video </li>
-<li><strong>width:</strong> Width of the image </li>
-<li><strong>height:</strong> Height of the image</li>
-<li><strong>poster:</strong> Image path of the poster to be shown.</li>
-</ul>
-<p>Example:</p>
-<pre><code>&lt;video id="video-id" style-class="video-style" src="resources/video.mp4"&gt;&lt;/video&gt;
-</code></pre>
-<p><strong>Very less tags compatitable? Wait you can very easily extend tags to support more html tags.Refer:</strong> <a href="#">Extending Tags for PYUI</a></p>
-<h3 id="window-adjustment-tags">Window Adjustment Tags</h3>
-<h4 id="1-style">1. style</h4>
-<p>For adding a external style file to the layout xml.</p>
-<p>Atributes supported:</p>
-<ul>
-<li><strong>file:</strong> file of the style file.<strong>file sshould be strictly inside</strong> <em>layouts/styles</em> <strong>folder</strong></li>
-</ul>
-<p><strong>Note:</strong> The style tag is only valid outside <strong>main-content</strong> tag and must be a direct child to <strong>pyui</strong> tag.It will be ignored by compiler if it is put inside the <strong>main-content</strong> tag. It will cause error if put inside the <strong>form-settings</strong> or any other tag. </p>
-<h4 id="2-main-content">2. main-content</h4>
-<p>This is the single holder for all windows inside the form.</p>
-<p>Attributes supported:</p>
-<ul>
-<li><strong>default-active-window:</strong> To set a default active window for the form. It takes the id of the window</li>
-</ul>
-<p>Example:</p>
-<pre><code>&lt;main-content default-active-window="window1"&gt;
+</li>
+<li>
+<p><strong>Getting a particular id's attribute</strong></p>
+<pre><code>val = e.attrib.attribute # This keep the attribute by reference, changing the variable `var` changes the attribute
 
-.....
+copy = str(e.attrib.attribute) # This keeps a copy of the attribute.You can typecast to the type of need
 
-&lt;window id="window1*&gt;
-
-&lt;/window&gt;
-
-.....
-
-&lt;main-content&gt;
+hidden = bool(e.attrib.hidden) # Here hidden is a boolean hence we typecast to bool and store the copy
 </code></pre>
-<h4 id="3-window">3. window:</h4>
-<p>It is a single view point of a form. One can change them easily using PYUI apis.</p>
-<p>Attributes supported:</p>
+</li>
+<li>
+<p><strong>Setting a particular id's attribute</strong></p>
+<pre><code>e.attrib.attribute = value_of_attribute
+
+e.attrib.hidden = False # &lt;- Hides the element completely (Example)
+</code></pre>
+</li>
+<li>
+<p><strong>Set a new Style for a id</strong></p>
+<pre><code>e.style.style_attribute = 'new_style_value'
+
+e.style.color = 'red' 
+e.style.backgroundColor = 'blue' # &lt;- Use camelCase for the properties with hypen in betweeen like background-color
+</code></pre>
+</li>
+<li>
+<p><strong>Add or Remove a Class</strong></p>
+<pre><code>e.add_class('class_name')
+e.remove_class('class_name')
+e.toggle_class('class_name')
+</code></pre>
+</li>
+</ol>
+<h4 id="dynamic-attributestyle-changing">Dynamic attribute/style changing</h4>
+<p>There is also another way you can achive the above.Always the name of attribute or style you will change may not be known ahead of time. Use the functional approach to work</p>
+<ol>
+<li>
+<p>For getting a style</p>
+<pre><code>e = Element('id')
+e.get_style('style-attribute')
+</code></pre>
+</li>
+<li>
+<p>For setting style</p>
+<pre><code>e.set_style('style-attribute','style-value')
+</code></pre>
+</li>
+<li>
+<p>For getting a attribute</p>
+<pre><code>e.get_attribute('attribute-name')
+</code></pre>
+</li>
+<li>
+<p>For setting a attribute</p>
+<pre><code>e.set_attribute('attribute-name','attribute-value')
+</code></pre>
+</li>
+</ol>
+<h2 id="using-procedural-pyui-api-calls">Using Procedural PYUI API calls</h2>
+<p>Prior to <code>PYUI 0.6</code>, PYUI had only procedural functions to handle DOM getting and setting. Although using <code>Element</code> class is much better in almost all cases using Procedural calls poses less overhead, helps better in debuging and might me useful in some cases.</p>
+<ol>
+<li>
+<p>Getting a attribute/property</p>
+<pre><code>self.pyui.getAttrib('id','attribute-name')
+
+# Example
+
+self.pyui.getAttrib('input-id','value')
+</code></pre>
+</li>
+<li>
+<p>Getting tag of the Element</p>
+<pre><code>self.pyui.getTag('id')
+</code></pre>
+</li>
+<li>
+<p>Setting attribute/property to DOM</p>
+<pre><code>self.pyui.set('id','attribute','value')
+
+# Example
+
+self.pyui.set('input-id','value','new value')
+</code></pre>
+</li>
+<li>
+<p>Setting style for a Element</p>
+<pre><code>self.pyui.setStyle('id','style_attribute','style_value')
+
+# Example
+
+self.pyui.setStyle('id','color','red')
+self.pyui.setStyle('id','backgroundColor','blue')
+</code></pre>
+</li>
+<li>
+<p>Getting style for a Element</p>
+<pre><code>self.pyui.getStyle('id','style_attribute')
+
+# Example
+
+self.pyui.getStyle("id","color")
+</code></pre>
+</li>
+<li>
+<p>Changing Class</p>
+<pre><code># Adding Class
+
+self.pyui.changeClass('id','className','ADD')
+
+# Remove Class
+
+self.pyui.changeClass('id','className','REMOVE')
+
+# Toggle Class
+
+self.pyui.changeClass('id','className','TOGGLE')
+</code></pre>
+</li>
+<li>
+<p>Setting InnerText of a Element</p>
+<pre><code>self.pyui.setText('id','new-text')
+</code></pre>
+</li>
+</ol>
+<h2 id="tradeoffs-and-when-to-use-what">Tradeoff's and when to use what</h2>
+<p>Eventhough usage of API is subjective. Still here is a simple mind map when to choose what.</p>
 <ul>
-<li><strong>id:</strong> Id of the window.</li>
-<li><strong>style-class:</strong> Equivalent to class attribute in html. This is to define all classes in a string.</li>
+<li>
+<p>In most cases while writing code you might use the <code>Element</code> class and it's easier to manage and use on paper. Only problem is you must need to define the Element instance for each element before acessing it. Creating new class for each element creates a bit of overhead also.
+How ever this is the most standard approach for most cases.</p>
+</li>
+<li>
+<p>In case you need to change attribute of many elements at onces say in a table of records it is adviced to use the <code>Procedural API</code> as creating a <code>Element</code> class for each node is a overkill.</p>
+</li>
 </ul>
-<h3 id="form-adjustement-tags">Form Adjustement Tags</h3>
-<p>This tags are defined in this format </p>
-<pre><code>&lt;tag&gt;Value&lt;/tag&gt;
-</code></pre>
-<h4 id="1-metadata">1. metadata</h4>
-<p>To store version of app used. In future builds it will support more tags. However you can even <a href="#">extend this using settings.py</a></p>
-<ul>
-<li><strong>version:</strong> App version</li>
-</ul>
-<p>Example:</p>
-<pre><code>&lt;metadata&gt;
-
-    &lt;version&gt;1.0.0&lt;/version&gt;
-
-&lt;/metadata&gt;
-</code></pre>
-<h4 id="2-form-settings">2. Form settings</h4>
-<pre><code>- Supports almost all Pywebview window settings.
-</code></pre>
-<p>Few attributes:</p>
-<ul>
-<li><strong>resizable:</strong> Is the page resizeable.</li>
-<li><strong>title:</strong> Title of the form.</li>
-<li><strong>width:</strong> width of the page.</li>
-<li><strong>height:</strong> height of the page.</li>
-</ul>
-<p>See <a href="https://pywebview.flowrl.com/api/">Pywebview window api</a> for all the settings.</p>
-<p>Example:</p>
-<pre><code>&lt;form-settings&gt;
-&lt;title&gt;PyUI Portal - Hello World&lt;/title&gt;
-&lt;resizeable&gt;False&lt;/resizeable&gt;
-&lt;/form-settings&gt;
-</code></pre>
 
 
 
