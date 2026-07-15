@@ -105,7 +105,7 @@ Attributes supported:
 
 Example:
 
-    <img id="image-id" style-class="img-style" src="resources/img.png" alt="Image can not be loaded"></img>
+    <img id="image-id" style-class="img-style" src="src@resources/img.png" alt="Image can not be loaded"></img>
 
 #### 7. video
 
@@ -126,7 +126,25 @@ Attributes supported:
 
 Example:
 
-    <video id="video-id" style-class="video-style" src="resources/video.mp4"></video>
+    <video id="video-id" style-class="video-style" src="src@resources/video.mp4"></video>
+
+### Sources path for assets
+
+For adding assets to your project, drop the sources inside the `sources` folder present in the project root directory.To load them inside the xml layouts you need to specify `src@realative_path_of_source_wrt_sources_folder`. Just like we did in `video` and `images` src fields.
+
+
+### Many more
+
+Many more tags are now officially supported by `PYUI 1.0.0` check `settings.py` for all tags and there attributes.
+
+Notable additions:
+
+1. `table` tag with `tr` , `td` , `th` same as `HTML` tables.
+
+2. `options` and `select` tags same as `HTML`.
+
+3. `h1`,`h2`,`h3`,`h4`,`label` tags are also added.
+
 
 **Very less tags compatitable? Wait you can very easily extend tags to support more html tags.Refer:** [Extending Tags for PYUI](#)
 
