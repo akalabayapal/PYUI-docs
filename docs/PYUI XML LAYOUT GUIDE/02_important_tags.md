@@ -146,7 +146,7 @@ Notable additions:
 3. `h1`,`h2`,`h3`,`h4`,`label` tags are also added.
 
 
-**Very less tags compatitable? Wait you can very easily extend tags to support more html tags.Refer:** [Extending Tags for PYUI](#)
+**Very less tags compatitable? Wait you can very easily extend tags to support more html tags.Refer:** [Extending Tags for PYUI](/PYUI%20XML%20LAYOUT%20GUIDE/03_extending_PYUI_compiler/)
 
 
 ### Window Adjustment Tags
@@ -234,5 +234,35 @@ Example:
     <resizeable>False</resizeable>
     </form-settings>
 
+## Magic keyword attrbiutes
+
+### data keyword
+
+Any attribute starting `data-` are allowed by default. This is done so developer can store extra information inside the element and access it back via `Python` or `JS` (during custom syscalls). This kind of attributes might be important while implementing elements like `Progressbar` in `PYUI`
+
+#### Example
+
+    <container id='pgbar' style-class='progress-bar' data-progress='80'></container>
+
+and getting it back in `PYUI`
+
+    e = Element('pgbar')
+    print(e.get_attribute('data-progress'))
+
+    # Expected output: 80 (in string)
+
+**Note:** Data attributes are always returned as `string` proper type chasting is needed
+
+### auto keyword
+
+It is bad if developer need to update `settings.py` multiple times just to add new attributes. So `PYUI 1.0.0` has introduced `auto-` type attributes. Any attribute will be ignored by compiler for checking if it is in allowed set in `settings.py` 
 
 
+#### Example
+For example you need to add inline css  in `Text` tag. So you can do it like this:
+
+    <Text innerText='Input something.....' auto-style='color:red;'></Input>
+
+This means `style` tag is added to the `Text` element when convertion happens while compilation.
+
+**Note:** Remember `on` type JS events are not allowed inside `PYUI` elements

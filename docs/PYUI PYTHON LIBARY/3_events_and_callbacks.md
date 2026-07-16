@@ -1,6 +1,6 @@
 # DOM Event Handling, Callbacks and Threading model
 
-`PYUI` supports adding event-callbacks to UI elements. There are two ways to do it we will discuss them one by one. Then focus on possible race conditions and how PYUI provides support to protect against potencial race-coditions.
+`PYUI` supports adding event-callbacks to UI elements. There are two ways to do it we will discuss them one by one. Then focus on possible race conditions and how PYUI provides support to protect against potential race-coditions.
 
 ## Registering a Callback to a UI Event
 
@@ -14,7 +14,7 @@
 
         e.on('event',self.callback,args)
 
-    **event:** This is the event you want to register. See JS documentation so see supported EventListeners. `PYUI` is almost comparitable with all the event listeners of JS.
+    **event:** This is the event you want to register. See JS documentation so see supported EventListeners. `PYUI` is almost compatible with all the event listeners of JS.
 
     **callback:** The callback function you want to execute when the event happens.
 
@@ -103,7 +103,7 @@ To prevent developers from race conditions `PYUI` provides few solutions and pro
 ### Group Function
 
 When a callback is registered a new thread is launched and it handles all callback event for a particular id and a event. Sometimes it is important that two callbacks to run only sequencially so that there code sections do not interleave to protect against the race conditions.
-Eventhough you never use group functions your callbacks will still be executed sequencially as `PYUI` by default groups all the callback threads into one.
+Even though you never use group functions your callbacks will still be executed sequencially as `PYUI` by default groups all the callback threads into one.
 
 But if you want a set of threads to execute concurrently without waiting for any other callbacks you can self group it
 
@@ -131,9 +131,9 @@ This puts all a,b,c into a single group that means if at a time all a,b,c events
 
 Now a problem comes that is if `PYUI` is sequencial in terms of callback there might be some long running callbacks that may stall the whole working of the Application. The solution given by PYUI is to use this decorator, adding this decorator to your function makes your function run concurrently and not sequencially.
 
-Usage of this decorator is not limited only to callbacks they can be used in general puposes. Following examples illustrate them:
+Usage of this decorator is not limited only to callbacks they can be used in general purposes. Following examples illustrate them:
 
-#### Example of @background in genral purpose
+#### Example of @background in general purpose
 
 Without @background 
 
@@ -200,7 +200,7 @@ Expected output:
 
 #### Example of @background in callback
 
-We recomend to perform the critical section work inside the seqencial callback and then offload the heavy tasks if needed to background worker.
+We recomend to perform the critical section work inside the sequential callback and then offload the heavy tasks if needed to background worker.
 
     import time
     ....
@@ -274,7 +274,7 @@ Although both values are eventually updated, the combination `(30, 20)` was neve
 
 #### How commit() solves it
 
-`commit()` is a function under the `PYUI` class that ensures atomic updates in between **all background workers that are started from same group**. So grouping is a critical decsion to stop problems like this.
+`commit()` is a function under the `PYUI` class that ensures atomic updates in between **all background workers that are started from same group**. So grouping is a critical decision to stop problems like this.
 
 
 API reference:
@@ -282,7 +282,7 @@ API reference:
     self.pyui.commit(scope,**variable_name=value)
 
 **scope:** Scope where your variable is present
-**variable_name:** you can commit one or more variables at onces for which this is infact designed
+**variable_name:** you can commit one or more variables at once for which this is infact designed
 
 Example:
 
