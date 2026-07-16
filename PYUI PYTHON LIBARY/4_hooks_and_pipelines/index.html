@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../02_important_tags/">
+        <link rel="prev" href="../3_events_and_callbacks/">
       
       
-        <link rel="next" href="../04_PYUI_Components/">
+        <link rel="next" href="../../PYUI%20XML%20LAYOUT%20GUIDE/01_index/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Extending PYUI Compiler using settings.py - PYUI Guide</title>
+        <title>Hooks and Pipelines - PYUI Guide</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#extending-pyui-compiler-using-settingspy" class="md-skip">
+        <a href="#hooks-and-pipelines" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Extending PYUI Compiler using settings.py
+              Hooks and Pipelines
             
           </span>
         </div>
@@ -301,18 +301,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -333,7 +335,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -351,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PYUI%20PYTHON%20LIBARY/1_index/" class="md-nav__link">
+      <a href="../1_index/" class="md-nav__link">
         
   
   
@@ -379,7 +381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PYUI%20PYTHON%20LIBARY/2_dom_manipulation/" class="md-nav__link">
+      <a href="../2_dom_manipulation/" class="md-nav__link">
         
   
   
@@ -407,7 +409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PYUI%20PYTHON%20LIBARY/3_events_and_callbacks/" class="md-nav__link">
+      <a href="../3_events_and_callbacks/" class="md-nav__link">
         
   
   
@@ -415,118 +417,6 @@
     
   
     DOM Event Handling, Callbacks and Threading model
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    PYUI XML LAYOUT GUIDE
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    PYUI XML LAYOUT GUIDE
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../01_index/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Getting Started with PYUI Layout XML
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../02_important_tags/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Boleplate Layout and Important Tags
   
 
     
@@ -563,7 +453,7 @@
   <span class="md-ellipsis">
     
   
-    Extending PYUI Compiler using settings.py
+    Hooks and Pipelines
   
 
     
@@ -581,7 +471,7 @@
   <span class="md-ellipsis">
     
   
-    Extending PYUI Compiler using settings.py
+    Hooks and Pipelines
   
 
     
@@ -607,37 +497,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#elemental-and-container-tags" class="md-nav__link">
+  <a href="#pipeline" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Elemental and Container Tags
+        Pipeline
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#understanding-layout-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Understanding Layout validation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#addingremoving-a-attribute-in-allowed-list" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Adding/Removing a attribute in allowed list
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Adding/Removing a attribute in allowed list">
+    <nav class="md-nav" aria-label="Pipeline">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -651,21 +519,49 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#when-to-use-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When to use Pipeline
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="When to use Pipeline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bad-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bad usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-new-elemental-tag-in-pyui" class="md-nav__link">
+  <a href="#hooks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adding New Elemental Tag in PYUI
+        Hooks
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Adding New Elemental Tag in PYUI">
+    <nav class="md-nav" aria-label="Hooks">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -684,21 +580,92 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#adding-new-container-tag-in-pyui" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Adding New Container Tag in PYUI
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PYUI XML LAYOUT GUIDE
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    PYUI XML LAYOUT GUIDE
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYUI%20XML%20LAYOUT%20GUIDE/01_index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started with PYUI Layout XML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -711,7 +678,63 @@
   
   
     <li class="md-nav__item">
-      <a href="../04_PYUI_Components/" class="md-nav__link">
+      <a href="../../PYUI%20XML%20LAYOUT%20GUIDE/02_important_tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boleplate Layout and Important Tags
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYUI%20XML%20LAYOUT%20GUIDE/03_extending_PYUI_compiler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extending PYUI Compiler using settings.py
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYUI%20XML%20LAYOUT%20GUIDE/04_PYUI_Components/" class="md-nav__link">
         
   
   
@@ -766,37 +789,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#elemental-and-container-tags" class="md-nav__link">
+  <a href="#pipeline" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Elemental and Container Tags
+        Pipeline
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#understanding-layout-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Understanding Layout validation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#addingremoving-a-attribute-in-allowed-list" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Adding/Removing a attribute in allowed list
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Adding/Removing a attribute in allowed list">
+    <nav class="md-nav" aria-label="Pipeline">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -810,21 +811,49 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#when-to-use-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When to use Pipeline
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="When to use Pipeline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bad-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bad usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-new-elemental-tag-in-pyui" class="md-nav__link">
+  <a href="#hooks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adding New Elemental Tag in PYUI
+        Hooks
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Adding New Elemental Tag in PYUI">
+    <nav class="md-nav" aria-label="Hooks">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -840,17 +869,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adding-new-container-tag-in-pyui" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Adding New Container Tag in PYUI
-      
-    </span>
-  </a>
   
 </li>
       
@@ -871,109 +889,161 @@
 
 
 
-<h1 id="extending-pyui-compiler-using-settingspy">Extending PYUI Compiler using settings.py</h1>
-<p>PYUI uses strict compilation time validation to protect your layout and give safer and stable layout.So only few tags are allowed right now in the compiler, but you can safely use more HTML tags directly by adding few lines in <code>settings.py</code> file in your project directory.</p>
-<h2 id="elemental-and-container-tags">Elemental and Container Tags</h2>
-<p>PYUI differentiates between two types of tags.</p>
+<h1 id="hooks-and-pipelines">Hooks and Pipelines</h1>
+<p><code>PYUI</code> has two very important feature <code>Hooks</code> and <code>Pipeline</code>. Pipeline helps in sending a batched set of <code>DOM Manipulation</code> commands to UI.While Hooks are lossy batched channels for sending data at a fast fixed rate to UI. In this page we will discuss both of them in more detail.</p>
+<h2 id="pipeline">Pipeline</h2>
+<p>For example you need to update 10 things in UI. Normally you will call dedicated functions for the changes 10 time. But <code>PYUI</code> has much better solution for this type of senarious.Rather than sending 10 different <code>message</code> tokens to <code>JS</code>.Pipeline gives a way to batch several such <code>DOM Manipulation</code> messages into one and send them at onces. This reduces the networking overhead significantly.</p>
+<h4 id="example">Example</h4>
+<p>Before we give the general syntax for <code>Pipeline</code> it is better to discuss it via a example, otherwise syntax may cause several confusions.</p>
+<pre><code>from PYUI.Package.PYUI import Pipeline # this import is needed
+
+class App:
+
+    def __init__(self,obj:PYUI):
+        self.pyui = obj
+
+        self.p = Pipeline()
+
+        # build the pipeline for sending batch
+        self.p.add(self.pyui.setText)
+        self.p.add(self.pyui.setStyle)
+        self.p.add(self.pyui.setStyle)
+        self.p.add(self.pyui.changeClass)
+
+        example_send() # call the function for batch update
+
+
+    def example_send(self):
+
+        # send batched UI mutation commands
+
+        self.p.call(
+            [
+                ('eid1','New text') # params for calling 1st function (setText)
+                ('eid2','color','red') # params for calling 2nd function (setStyle)
+                ('eid1','backgroundColor','blue') # params for calling 3rd function (setStyle)
+                ('eid2','class_new','ADD') # params for calling 4th function (changeClass)
+            ]
+        )
+</code></pre>
+<p>So the steps to use <code>Pipeline</code> are:</p>
 <ol>
 <li>
-<p><strong>Elemental Tags:</strong> This are the buttons,inputs,Text etc. In this tags all properties even text is attribite defined. If you add elements inside this tags it will be ignored by compiler. This Tags are defined in <code>TAG_RULES_HASHMAP</code> in <code>CompilerSettings</code> class in <code>settings.py</code>.</p>
+<p>Make a instance of <code>Pipeline</code></p>
+<pre><code>p = Pipeline()
+</code></pre>
 </li>
 <li>
-<p><strong>Container Tags:</strong> This are the tags to hold everal Elemental tags inside them.They can contain other Elemental or Contianer Tags inside them. This Tags are additionally defined in <code>LAYOUT_CONTAINER_TAGS</code> in <code>CompilerSettings</code> class in <code>settings.py</code>.</p>
+<p>Add the <code>PYUI</code> functions that are <strong>compatible with Pipeline</strong></p>
+<p>Look for the functions in <code>PYUI Libary</code> that have <code>ret</code> parameter are directly compatible with <code>Pipeline</code>.</p>
+<pre><code>p.add(self.pyui.function)
+</code></pre>
+</li>
+<li>
+<p>When needed call pyui with <strong>list of tuple</strong> of parameters that needed to be passed to the functions</p>
+<pre><code>p.call(
+    [
+        (parms_of_func1),
+        (params_of_func2)
+        .
+        .
+        .
+        (params_of_func_n)
+    ]
+)
+</code></pre>
 </li>
 </ol>
-<h2 id="understanding-layout-validation">Understanding Layout validation</h2>
-<p>Before diving into how to add tags and attributes in <code>PYUI XML</code> it is important to understand role of three objects in <code>settings.py</code>.</p>
+<h3 id="when-to-use-pipeline">When to use Pipeline</h3>
+<p>Whenever there is a need for sending a set of pre-known UI mutations it is better to use <code>Pipeline</code>. Also always define a pipeline ones and use it multiple times.</p>
+<h4 id="bad-usage">Bad usage</h4>
+<pre><code>def example_send(self):
+
+        p = Pipeline()
+
+        # build the pipeline for sending batch
+        p.add(self.pyui.setText)
+        p.add(self.pyui.setStyle)
+        p.add(self.pyui.setStyle)
+        p.add(self.pyui.changeClass)
+
+        # send batched UI mutation commands
+
+        p.call(
+            [
+                ('eid1','New text') # params for calling 1st function (setText)
+                ('eid2','color','red') # params for calling 2nd function (setStyle)
+                ('eid1','backgroundColor','blue') # params for calling 3rd function (setStyle)
+                ('eid2','class_new','ADD') # params for calling 4th function (changeClass)
+            ]
+        )
+</code></pre>
+<p>This will make <code>Pipeline</code> instance each time <code>example_send</code> is called. So better usage is to define <code>Pipeline</code> in a shared space like in <code>__init__</code> functions and only use <code>call</code> inside mutating functions.</p>
+<h2 id="hooks">Hooks</h2>
+<p>When a batch instruction (i.e Pipeline) is to be called in a fixed interval multiple times using <code>Hooks</code> is better. But <code>Hooks</code> serve much more than just that:</p>
 <ol>
 <li>
-<p>PYUI compiler makes a document tree and traverses to check if all nodes Tags are present in either <code>TAG_RULES_HASHMAP</code> or <code>LAYOUT_CONTAINER_TAGS</code>. If it doesn't it stops compilation and throws error.</p>
+<p><strong>FPS Control:</strong> Your updates might be very fast but you can control how fast (in fps) you want that to be updated in your UI. Your sensor might give results in 100 fps.  But you might want to send the changes to UI at only 30 fps you can use <code>Hooks</code>.</p>
 </li>
 <li>
-<p>PYUI Compiler also checks the attributes of the tags and checks if those attributes are allowed in the <code>TAG_RULES_HASHMAP</code> dictionary under the particiular tag.</p>
+<p><strong>Lossy updates:</strong> For fast updates it is needed to preserve each updates. So some updates can be dropped from being shown from UI.This improves application response</p>
 </li>
 <li>
-<p>PYUI Converter uses <code>HTML_TAG_CONVERSION_MAP</code> to change PYUI XML to HTML using this map.All attributes except <code>style-class</code> and innerText remains same.</p>
-<ul>
-<li>style-class gets changed to class in pure html.</li>
-<li>innerText gets branched out to make it the actual innerText of that tag.</li>
-</ul>
+<p><strong>Higher Priority:</strong> Hook messages travel in much higher priority than normal updates. Hence the UI updates remain more clean.</p>
+</li>
+<li>
+<p><strong>Update on demand:</strong> The updates are only send if there is any change. For example a progressbar connected to hook the percentage to change the progress will be sent only when there is change in progress than sending it at high fps.</p>
 </li>
 </ol>
-<h2 id="addingremoving-a-attribute-in-allowed-list">Adding/Removing a attribute in allowed list</h2>
-<p>1.Find out the tag in  <code>TAG_RULES_HASHMAP</code> dictionary in settings.py under <code>CompilerSettings</code> class.</p>
-<p>2.You will find a repective <code>set</code> object for the tag in <code>TAG_RULES_HASHMAP</code>. This set contains all allowed attributes for the tag.</p>
-<p>3.Add or remove attributes inside the set and save <code>settings.py</code></p>
-<h3 id="example">Example</h3>
-<p>Consider the tag <code>Button</code>:</p>
-<pre><code>    {
-    .....
-    "Button": {"innerText", "style-class", "id"},
-    .....
-    }
+<h4 id="example_1">Example</h4>
+<pre><code>from PYUI.Package.PYUI import Pipeline,Hook # this import is needed
+import time
+
+class App:
+
+    def __init__(self,obj:PYUI):
+        self.pyui = obj
+
+        self.p = Pipeline()
+
+        # build the pipeline for sending batch
+        self.p.add(self.pyui.setText)
+        self.p.add(self.pyui.setStyle)
+        self.p.add(self.pyui.setStyle)
+        self.p.add(self.pyui.changeClass)
+
+        self.h = Hook(pipe=self.p,pyui=self.pyui,fps=15)
+
+        # simulating fast updates
+
+        while True:
+            example_send() # call the function for batch update
+            time.sleep(0.01) # small pause
+
+
+    def example_send(self):
+
+        # send updates
+
+        self.h.update(
+            [
+                ('eid1',str(time.time_ns())) # params for calling 1st function (setText)
+                ('eid2','color','red') # params for calling 2nd function (setStyle)
+                ('eid1','backgroundColor','blue') # params for calling 3rd function (setStyle)
+                ('eid2','class_new','ADD') # params for calling 4th function (changeClass)
+            ]
+        )
 </code></pre>
-<p>In button this 3 attributes are allowed.But if I want to add a new attribute to allowed list let's say <code>attribute_custom</code>. I need to update it like the following:</p>
-<pre><code>    {
-    .....
-    "Button": {"innerText", "style-class", "id","attribute_custom"}, # &lt;-- Custom attribute added
-    .....
-    }
-</code></pre>
-<p>That is it.. Now compiler knows to allow <code>attribute_custom</code>.</p>
-<p><strong>Note:</strong> To run compilation/hot-reloading with new settings use <code>--settings settings.py</code> tag while compilation or hot-reloading.</p>
-<h2 id="adding-new-elemental-tag-in-pyui">Adding New Elemental Tag in PYUI</h2>
+<p>Eventhough updates are coming at <strong>100fps</strong> the updates happen only at <strong>15fps</strong> only. </p>
+<p>Steps to use <code>Hook</code>:</p>
 <ol>
 <li>
-<p>Visit <code>TAG_RULES_HASHMAP</code> dictionary. You will find all tags that are allowed.</p>
+<p>Make a Pipeline and add the functions</p>
 </li>
 <li>
-<p>Add your new tag inside dictionary.</p>
-</li>
-<li>
-<p>Add the html equivalent tag of it in <code>HTML_TAG_CONVERSION_MAP</code>.</p>
+<p>Call <code>.update</code> function to update the values</p>
 </li>
 </ol>
-<h3 id="example_1">Example</h3>
-<p>Consider <code>TAG_RULES_HASHMAP</code></p>
-<pre><code>TAG_RULES_HASHMAP = {
-
-......
-......
-
-# --- NEW MEDIA TAGS ---
-"img": {"id", "style-class", "src", "alt", "width", "height"},
-"video": {"id", "style-class", "src", "controls", "autoplay", "loop", "muted", "poster", "width", "height"},
-"audio": {"id", "style-class", "src", "controls", "autoplay", "loop", "muted"}
-
-# ---- NEW TAG ADDED ---- #
-"custom_tag":set() # &lt;--- Custom Tag
-
-}
-</code></pre>
-<p>Then go to <code>HTML_TAG_CONVERSION_MAP</code> and add HTML equivalent tag for <code>custom_tag</code></p>
-<pre><code>HTML_TAG_CONVERSION_MAP = {
-
-    .....
-    "br": "br",
-    "Para":"p",
-    # --- NEW MEDIA MAPPINGS ---
-    "img": "img",
-    "video": "video",
-    "audio": "audio",
-
-    "custom_tag":"h1" # &lt;-- New tag 'custom_tag' will get converted to a static html `h1` upon compilation
-
-}
-</code></pre>
-<p>That is it. Custom Tag is added. Use <a href="#addingremoving-a-attribute-in-allowed-list">Adding/Removing a attribute in allowed list </a> reference to add attributes to newly created tag.</p>
-<p><strong>Note:</strong> To run compilation/hot-reloading with new settings use <code>--settings settings.py</code> tag while compilation or hot-reloading.</p>
-<h2 id="adding-new-container-tag-in-pyui">Adding New Container Tag in PYUI</h2>
-<p>For adding a new Container Tag in PYUI first follow steps given in <a href="#adding-new-elemental-tag-in-pyui">Adding New Elemental Tag in PYUI</a></p>
-<p>Then, visit <code>LAYOUT_CONTAINER_TAGS</code> in <code>settings.py</code> under <code>CompilerSettings</code> class</p>
-<pre><code>LAYOUT_CONTAINER_TAGS = {"main-content", "window","container",
-"pyui","custom_tags" } # &lt;-- `custom_tags` added
-</code></pre>
-<p><strong>Note:</strong> To run compilation/hot-reloading with new settings use <code>--settings settings.py</code> tag while compilation or hot-reloading.</p>
 
 
 

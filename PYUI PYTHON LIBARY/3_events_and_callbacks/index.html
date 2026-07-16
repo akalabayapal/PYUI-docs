@@ -12,7 +12,7 @@
         <link rel="prev" href="../2_dom_manipulation/">
       
       
-        <link rel="next" href="../../PYUI%20XML%20LAYOUT%20GUIDE/01_index/">
+        <link rel="next" href="../4_hooks_and_pipelines/">
       
       
         
@@ -627,10 +627,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example-of-background-in-genral-purpose" class="md-nav__link">
+  <a href="#example-of-background-in-general-purpose" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example of @background in genral purpose
+        Example of @background in general purpose
       
     </span>
   </a>
@@ -701,6 +701,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../4_hooks_and_pipelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hooks and Pipelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -823,7 +851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PYUI%20XML%20LAYOUT%20GUIDE/03_etendeding_PYUI_compiler/" class="md-nav__link">
+      <a href="../../PYUI%20XML%20LAYOUT%20GUIDE/03_extending_PYUI_compiler/" class="md-nav__link">
         
   
   
@@ -1064,10 +1092,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example-of-background-in-genral-purpose" class="md-nav__link">
+  <a href="#example-of-background-in-general-purpose" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example of @background in genral purpose
+        Example of @background in general purpose
       
     </span>
   </a>
@@ -1152,7 +1180,7 @@
 
 
 <h1 id="dom-event-handling-callbacks-and-threading-model">DOM Event Handling, Callbacks and Threading model</h1>
-<p><code>PYUI</code> supports adding event-callbacks to UI elements. There are two ways to do it we will discuss them one by one. Then focus on possible race conditions and how PYUI provides support to protect against potencial race-coditions.</p>
+<p><code>PYUI</code> supports adding event-callbacks to UI elements. There are two ways to do it we will discuss them one by one. Then focus on possible race conditions and how PYUI provides support to protect against potential race-coditions.</p>
 <h2 id="registering-a-callback-to-a-ui-event">Registering a Callback to a UI Event</h2>
 <h3 id="using-element-class">Using Element Class</h3>
 <ol>
@@ -1165,7 +1193,7 @@
 <p>Register the event</p>
 <pre><code>e.on('event',self.callback,args)
 </code></pre>
-<p><strong>event:</strong> This is the event you want to register. See JS documentation so see supported EventListeners. <code>PYUI</code> is almost comparitable with all the event listeners of JS.</p>
+<p><strong>event:</strong> This is the event you want to register. See JS documentation so see supported EventListeners. <code>PYUI</code> is almost compatible with all the event listeners of JS.</p>
 <p><strong>callback:</strong> The callback function you want to execute when the event happens.</p>
 <p><strong>args:</strong> Extra arguments to be passed to the callback when it is called</p>
 </li>
@@ -1239,7 +1267,7 @@ self.pyui.UnRegisterCallback('btn-example','click')
 </ul>
 <h3 id="group-function">Group Function</h3>
 <p>When a callback is registered a new thread is launched and it handles all callback event for a particular id and a event. Sometimes it is important that two callbacks to run only sequencially so that there code sections do not interleave to protect against the race conditions.
-Eventhough you never use group functions your callbacks will still be executed sequencially as <code>PYUI</code> by default groups all the callback threads into one.</p>
+Even though you never use group functions your callbacks will still be executed sequencially as <code>PYUI</code> by default groups all the callback threads into one.</p>
 <p>But if you want a set of threads to execute concurrently without waiting for any other callbacks you can self group it</p>
 <p>Example:</p>
 <pre><code>group(callback_func,callback_func)
@@ -1256,8 +1284,8 @@ group(b,c)
 <p>This puts all a,b,c into a single group that means if at a time all a,b,c events or any two of the events needs to be executed they will be executed sequencially not concurrently.</p>
 <h3 id="background-decorator">@background decorator</h3>
 <p>Now a problem comes that is if <code>PYUI</code> is sequencial in terms of callback there might be some long running callbacks that may stall the whole working of the Application. The solution given by PYUI is to use this decorator, adding this decorator to your function makes your function run concurrently and not sequencially.</p>
-<p>Usage of this decorator is not limited only to callbacks they can be used in general puposes. Following examples illustrate them:</p>
-<h4 id="example-of-background-in-genral-purpose">Example of @background in genral purpose</h4>
+<p>Usage of this decorator is not limited only to callbacks they can be used in general purposes. Following examples illustrate them:</p>
+<h4 id="example-of-background-in-general-purpose">Example of @background in general purpose</h4>
 <p>Without @background </p>
 <pre><code>import time
 .....
@@ -1317,7 +1345,7 @@ def entry(obj:PYUI):
 Long running task completed
 </code></pre>
 <h4 id="example-of-background-in-callback">Example of @background in callback</h4>
-<p>We recomend to perform the critical section work inside the seqencial callback and then offload the heavy tasks if needed to background worker.</p>
+<p>We recomend to perform the critical section work inside the sequential callback and then offload the heavy tasks if needed to background worker.</p>
 <pre><code>import time
 ....
 
@@ -1374,12 +1402,12 @@ y = 20
 </code></pre>
 <p>Although both values are eventually updated, the combination <code>(30, 20)</code> was never a valid state—it exists only because the read occurred midway through the update.</p>
 <h4 id="how-commit-solves-it">How commit() solves it</h4>
-<p><code>commit()</code> is a function under the <code>PYUI</code> class that ensures atomic updates in between <strong>all background workers that are started from same group</strong>. So grouping is a critical decsion to stop problems like this.</p>
+<p><code>commit()</code> is a function under the <code>PYUI</code> class that ensures atomic updates in between <strong>all background workers that are started from same group</strong>. So grouping is a critical decision to stop problems like this.</p>
 <p>API reference:</p>
 <pre><code>self.pyui.commit(scope,**variable_name=value)
 </code></pre>
 <p><strong>scope:</strong> Scope where your variable is present
-<strong>variable_name:</strong> you can commit one or more variables at onces for which this is infact designed</p>
+<strong>variable_name:</strong> you can commit one or more variables at once for which this is infact designed</p>
 <p>Example:</p>
 <pre><code>self.pyui.commit(
     global,

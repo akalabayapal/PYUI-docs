@@ -12,7 +12,7 @@
         <link rel="prev" href="../01_index/">
       
       
-        <link rel="next" href="../03_etendeding_PYUI_compiler/">
+        <link rel="next" href="../03_extending_PYUI_compiler/">
       
       
         
@@ -428,6 +428,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYUI%20PYTHON%20LIBARY/4_hooks_and_pipelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hooks and Pipelines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -800,6 +828,79 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#magic-keyword-attrbiutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Magic keyword attrbiutes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Magic keyword attrbiutes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-keyword" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        data keyword
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="data keyword">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-keyword" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        auto keyword
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="auto keyword">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -816,7 +917,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../03_etendeding_PYUI_compiler/" class="md-nav__link">
+      <a href="../03_extending_PYUI_compiler/" class="md-nav__link">
         
   
   
@@ -1120,6 +1221,79 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#magic-keyword-attrbiutes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Magic keyword attrbiutes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Magic keyword attrbiutes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-keyword" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        data keyword
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="data keyword">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-keyword" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        auto keyword
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="auto keyword">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1259,7 +1433,7 @@
 <p><code>h1</code>,<code>h2</code>,<code>h3</code>,<code>h4</code>,<code>label</code> tags are also added.</p>
 </li>
 </ol>
-<p><strong>Very less tags compatitable? Wait you can very easily extend tags to support more html tags.Refer:</strong> <a href="#">Extending Tags for PYUI</a></p>
+<p><strong>Very less tags compatitable? Wait you can very easily extend tags to support more html tags.Refer:</strong> <a href="/PYUI%20XML%20LAYOUT%20GUIDE/03_extending_PYUI_compiler/">Extending Tags for PYUI</a></p>
 <h3 id="window-adjustment-tags">Window Adjustment Tags</h3>
 <h4 id="1-style">1. style</h4>
 <p>For adding a external style file to the layout xml.</p>
@@ -1327,6 +1501,27 @@
 &lt;resizeable&gt;False&lt;/resizeable&gt;
 &lt;/form-settings&gt;
 </code></pre>
+<h2 id="magic-keyword-attrbiutes">Magic keyword attrbiutes</h2>
+<h3 id="data-keyword">data keyword</h3>
+<p>Any attribute starting <code>data-</code> are allowed by default. This is done so developer can store extra information inside the element and access it back via <code>Python</code> or <code>JS</code> (during custom syscalls). This kind of attributes might be important while implementing elements like <code>Progressbar</code> in <code>PYUI</code></p>
+<h4 id="example">Example</h4>
+<pre><code>&lt;container id='pgbar' style-class='progress-bar' data-progress='80'&gt;&lt;/container&gt;
+</code></pre>
+<p>and getting it back in <code>PYUI</code></p>
+<pre><code>e = Element('pgbar')
+print(e.get_attribute('data-progress'))
+
+# Expected output: 80 (in string)
+</code></pre>
+<p><strong>Note:</strong> Data attributes are always returned as <code>string</code> proper type chasting is needed</p>
+<h3 id="auto-keyword">auto keyword</h3>
+<p>It is bad if developer need to update <code>settings.py</code> multiple times just to add new attributes. So <code>PYUI 1.0.0</code> has introduced <code>auto-</code> type attributes. Any attribute will be ignored by compiler for checking if it is in allowed set in <code>settings.py</code> </p>
+<h4 id="example_1">Example</h4>
+<p>For example you need to add inline css  in <code>Text</code> tag. So you can do it like this:</p>
+<pre><code>&lt;Text innerText='Input something.....' auto-style='color:red;'&gt;&lt;/Input&gt;
+</code></pre>
+<p>This means <code>style</code> tag is added to the <code>Text</code> element when convertion happens while compilation.</p>
+<p><strong>Note:</strong> Remember <code>on</code> type JS events are not allowed inside <code>PYUI</code> elements</p>
 
 
 
