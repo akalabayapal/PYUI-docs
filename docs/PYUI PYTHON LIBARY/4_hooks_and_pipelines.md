@@ -98,6 +98,26 @@ Whenever there is a need for sending a set of pre-known UI mutations it is bette
 
 This will make `Pipeline` instance each time `example_send` is called. So better usage is to define `Pipeline` in a shared space like in `__init__` functions and only use `call` inside mutating functions.
 
+### Arithmetic approach of adding targets to Pipeline
+
+Using `p.add()` multiple time clutter the code. So `PYUI 0.6` intoduced arithmetic approach of adding targets to pipeline
+
+#### Example 
+
+    p = Pipeline() + self.pyui.setText + self.pyui.setStyle + self.pyui.setStyle + self.pyui.changeClass
+
+Is equivalent to:
+
+    p = Pipeline()
+
+    # build the pipeline for sending batch
+    p.add(self.pyui.setText)
+    p.add(self.pyui.setStyle)
+    p.add(self.pyui.setStyle)
+    p.add(self.pyui.changeClass)
+
+Using this approach will keep your code clean and crisp
+
 ## Hooks
 
 When a batch instruction (i.e Pipeline) is to be called in a fixed interval multiple times using `Hooks` is better. But `Hooks` serve much more than just that:
