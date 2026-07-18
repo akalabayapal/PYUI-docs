@@ -12,7 +12,7 @@
         <link rel="prev" href="../3_events_and_callbacks/">
       
       
-        <link rel="next" href="../../PYUI%20XML%20LAYOUT%20GUIDE/01_index/">
+        <link rel="next" href="../5_component_lifecycle/">
       
       
         
@@ -547,6 +547,34 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#arithmetic-approach-of-adding-targets-to-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arithmetic approach of adding targets to Pipeline
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arithmetic approach of adding targets to Pipeline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -565,7 +593,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example_1" class="md-nav__link">
+  <a href="#example_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         Example
@@ -584,6 +612,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5_component_lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dynamic Component Lifecycle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -839,6 +895,34 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#arithmetic-approach-of-adding-targets-to-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arithmetic approach of adding targets to Pipeline
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arithmetic approach of adding targets to Pipeline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -857,7 +941,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#example_1" class="md-nav__link">
+  <a href="#example_2" class="md-nav__link">
     <span class="md-ellipsis">
       
         Example
@@ -979,6 +1063,21 @@ class App:
         )
 </code></pre>
 <p>This will make <code>Pipeline</code> instance each time <code>example_send</code> is called. So better usage is to define <code>Pipeline</code> in a shared space like in <code>__init__</code> functions and only use <code>call</code> inside mutating functions.</p>
+<h3 id="arithmetic-approach-of-adding-targets-to-pipeline">Arithmetic approach of adding targets to Pipeline</h3>
+<p>Using <code>p.add()</code> multiple time clutter the code. So <code>PYUI 0.6</code> intoduced arithmetic approach of adding targets to pipeline</p>
+<h4 id="example_1">Example</h4>
+<pre><code>p = Pipeline() + self.pyui.setText + self.pyui.setStyle + self.pyui.setStyle + self.pyui.changeClass
+</code></pre>
+<p>Is equivalent to:</p>
+<pre><code>p = Pipeline()
+
+# build the pipeline for sending batch
+p.add(self.pyui.setText)
+p.add(self.pyui.setStyle)
+p.add(self.pyui.setStyle)
+p.add(self.pyui.changeClass)
+</code></pre>
+<p>Using this approach will keep your code clean and crisp</p>
 <h2 id="hooks">Hooks</h2>
 <p>When a batch instruction (i.e Pipeline) is to be called in a fixed interval multiple times using <code>Hooks</code> is better. But <code>Hooks</code> serve much more than just that:</p>
 <ol>
@@ -995,7 +1094,7 @@ class App:
 <p><strong>Update on demand:</strong> The updates are only send if there is any change. For example a progressbar connected to hook the percentage to change the progress will be sent only when there is change in progress than sending it at high fps.</p>
 </li>
 </ol>
-<h4 id="example_1">Example</h4>
+<h4 id="example_2">Example</h4>
 <pre><code>from PYUI.Package.PYUI import Pipeline,Hook # this import is needed
 import time
 

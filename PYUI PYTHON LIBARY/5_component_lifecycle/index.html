@@ -9,8 +9,10 @@
       
       
       
-        <link rel="prev" href="../03_extending_PYUI_compiler/">
+        <link rel="prev" href="../4_hooks_and_pipelines/">
       
+      
+        <link rel="next" href="../../PYUI%20XML%20LAYOUT%20GUIDE/01_index/">
       
       
         
@@ -21,7 +23,7 @@
     
     
       
-        <title>Reusing Layouts using Components - PYUI Guide</title>
+        <title>Dynamic Component Lifecycle - PYUI Guide</title>
       
     
     
@@ -62,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#reusing-layouts-using-components" class="md-skip">
+        <a href="#dynamic-component-lifecycle" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Reusing Layouts using Components
+              Dynamic Component Lifecycle
             
           </span>
         </div>
@@ -299,18 +301,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -331,7 +335,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -349,7 +353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PYUI%20PYTHON%20LIBARY/1_index/" class="md-nav__link">
+      <a href="../1_index/" class="md-nav__link">
         
   
   
@@ -377,7 +381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PYUI%20PYTHON%20LIBARY/2_dom_manipulation/" class="md-nav__link">
+      <a href="../2_dom_manipulation/" class="md-nav__link">
         
   
   
@@ -405,7 +409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PYUI%20PYTHON%20LIBARY/3_events_and_callbacks/" class="md-nav__link">
+      <a href="../3_events_and_callbacks/" class="md-nav__link">
         
   
   
@@ -433,7 +437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../PYUI%20PYTHON%20LIBARY/4_hooks_and_pipelines/" class="md-nav__link">
+      <a href="../4_hooks_and_pipelines/" class="md-nav__link">
         
   
   
@@ -441,174 +445,6 @@
     
   
     Hooks and Pipelines
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../PYUI%20PYTHON%20LIBARY/5_component_lifecycle/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Dynamic Component Lifecycle
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    PYUI XML LAYOUT GUIDE
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    PYUI XML LAYOUT GUIDE
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../01_index/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Getting Started with PYUI Layout XML
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../02_important_tags/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Boleplate Layout and Important Tags
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../03_extending_PYUI_compiler/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Extending PYUI Compiler using settings.py
   
 
     
@@ -645,7 +481,7 @@
   <span class="md-ellipsis">
     
   
-    Reusing Layouts using Components
+    Dynamic Component Lifecycle
   
 
     
@@ -663,7 +499,7 @@
   <span class="md-ellipsis">
     
   
-    Reusing Layouts using Components
+    Dynamic Component Lifecycle
   
 
     
@@ -689,55 +525,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-a-component" class="md-nav__link">
+  <a href="#adding-and-removing-custom-node-in-pyui" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Creating a component
+        Adding and Removing custom node in PYUI
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#default-property-support" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Default property support.
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#acessing-component-from-a-layout-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Acessing component from a layout file
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#acessing-id-from-pyui" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Acessing ID from PYUI
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Acessing ID from PYUI">
+    <nav class="md-nav" aria-label="Adding and Removing custom node in PYUI">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#important-points-to-remember" class="md-nav__link">
+  <a href="#registering-a-unmanged-node" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Important points to Remember
+        Registering a Unmanged Node
       
     </span>
   </a>
@@ -745,10 +548,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#acessing-components-inner-elements-from-python-runtime" class="md-nav__link">
+  <a href="#un-registering-a-unmanaged-node" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Acessing Component's inner elements from PYTHON Runtime
+        Un-Registering a Unmanaged Node
       
     </span>
   </a>
@@ -760,10 +563,265 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#adding-component-to-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding Component to UI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deleting-a-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deleting a Component
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deleting a Component">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-custom-html-to-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding custom HTML to UI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding custom HTML to UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#few-important-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Few important notes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chaining-htmlobjects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chaining HTMLObjects
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removing-html-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removing HTML Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PYUI XML LAYOUT GUIDE
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    PYUI XML LAYOUT GUIDE
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYUI%20XML%20LAYOUT%20GUIDE/01_index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started with PYUI Layout XML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYUI%20XML%20LAYOUT%20GUIDE/02_important_tags/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boleplate Layout and Important Tags
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYUI%20XML%20LAYOUT%20GUIDE/03_extending_PYUI_compiler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Extending PYUI Compiler using settings.py
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYUI%20XML%20LAYOUT%20GUIDE/04_PYUI_Components/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reusing Layouts using Components
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -803,55 +861,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-a-component" class="md-nav__link">
+  <a href="#adding-and-removing-custom-node-in-pyui" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Creating a component
+        Adding and Removing custom node in PYUI
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#default-property-support" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Default property support.
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#acessing-component-from-a-layout-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Acessing component from a layout file
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#acessing-id-from-pyui" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Acessing ID from PYUI
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Acessing ID from PYUI">
+    <nav class="md-nav" aria-label="Adding and Removing custom node in PYUI">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#important-points-to-remember" class="md-nav__link">
+  <a href="#registering-a-unmanged-node" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Important points to Remember
+        Registering a Unmanged Node
       
     </span>
   </a>
@@ -859,10 +884,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#acessing-components-inner-elements-from-python-runtime" class="md-nav__link">
+  <a href="#un-registering-a-unmanaged-node" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Acessing Component's inner elements from PYTHON Runtime
+        Un-Registering a Unmanaged Node
       
     </span>
   </a>
@@ -871,6 +896,95 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-component-to-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding Component to UI
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deleting-a-component" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deleting a Component
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Deleting a Component">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-custom-html-to-ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding custom HTML to UI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Adding custom HTML to UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#few-important-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Few important notes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chaining-htmlobjects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chaining HTMLObjects
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#removing-html-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Removing HTML Contents
+      
+    </span>
+  </a>
   
 </li>
       
@@ -891,73 +1005,176 @@
 
 
 
-<h1 id="reusing-layouts-using-components">Reusing Layouts using Components</h1>
-<p>PYUI supports static component reusage and props system. All your components must lie inside <code>layouts\components</code> folder.</p>
-<h2 id="creating-a-component">Creating a component</h2>
-<p>Following is the format of defining a Component with <code>prop</code> as one of the properly.To acess properties passed use <code>{property_name_passed}</code></p>
-<pre><code>&lt;ComponentFile&gt;
-&lt;container&gt;
-    &lt;Text id="text_component" innerText="{prop}"&gt;&lt;/Text&gt;
-&lt;/container&gt;
-&lt;/ComponentFile&gt;
-</code></pre>
-<h2 id="default-property-support">Default property support.</h2>
-<p><code>PYUI 1.0.0</code> added defualt property support.Now you can assign a default value to props and those will be used when explicitly properties are not passed from the parent layout, or from the python dynamic component handler.</p>
-<pre><code>&lt;ComponentFile prop="default_content"&gt;
-&lt;container&gt;
-    &lt;Text id="text_component" innerText="{prop}"&gt;&lt;/Text&gt;
-&lt;/container&gt;
-&lt;/ComponentFile&gt;
-</code></pre>
-<p>We need to define the default props as attribute of the <code>ComponentFile</code> tag as shown above.</p>
-<p><strong>Note:</strong> Keeping components empty are strictly blocked and atleast one tag should be a child of ComponentFile (like here it is container)</p>
-<h2 id="acessing-component-from-a-layout-file">Acessing component from a layout file</h2>
-<p>For using a component from the layout file. Use the following</p>
-<pre><code>&lt;Component file="ex.xml" name="ex" prop="Sample Text"&gt;&lt;/Component&gt;
-</code></pre>
+<h1 id="dynamic-component-lifecycle">Dynamic Component Lifecycle</h1>
+<p><code>PYUI 6.0</code> introduced using components dynamically. Now you can <code>add</code> and <code>remove</code> components dynamically from <code>Python Runtime</code>.</p>
+<p>This page covers</p>
 <ol>
-<li><strong>file:</strong> This is the file for components.This file path is relative to <code>components</code> folder.</li>
-<li><strong>name:</strong> This is used as base name for all the id present in the component. This is done to avoid the ID Collision when same component is used twice or more.Do not use same name for any two components from same file</li>
-<li><strong>prop:</strong> A example property passed to the component.Infact you can pass as many you want<pre><code>&lt;Component file="ex.xml" name="person_1" name="John" age="24" height="169cm"&gt;&lt;/Component&gt;
-&lt;Component file="ex.xml" name="person_2" name="Harry" age="44" height="182cm"&gt;&lt;/Component&gt;
-..............
+<li>How to register and unregister custom nodes in PYUI Python Runtime</li>
+<li>Adding and Removing Components</li>
+<li>Adding and Remving custom HTML content</li>
+</ol>
+<h2 id="adding-and-removing-custom-node-in-pyui">Adding and Removing custom node in PYUI</h2>
+<p><code>PYUI</code> allows to register or un-register nodes to <code>Python Runtime</code> if they are created dynamically. This are internally used in <code>Component</code> class but you might need it separately many times, mostly while working with <code>custom syscalls</code>.</p>
+<h3 id="registering-a-unmanged-node">Registering a Unmanged Node</h3>
+<pre><code>self.pyui.RegisterUnmanagedNode(id,tag)
+
+# Example
+
+self.pyui.RegisterUnmanagedNode("dyn_node","div")
+</code></pre>
+<h3 id="un-registering-a-unmanaged-node">Un-Registering a Unmanaged Node</h3>
+<pre><code>self.pyui.UnRegisterUnmanagedNode(id)
+
+# Example
+
+self.UnRegisterUnmanagedNode('dyn_node')
+</code></pre>
+<p><strong>Note:</strong> Un-register function automatically cleans callbacks associated with the given id</p>
+<h2 id="adding-component-to-ui">Adding Component to UI</h2>
+<ol>
+<li>
+<p>For adding Component to UI. The component must be well defined inside the <code>Components</code> folder.If not <code>PYUI</code> will fail to create <code>Component</code> instance</p>
+<p>Example Component:</p>
+<pre><code>&lt;ComponentFile text="Default text" place="Default Placeholder"&gt;
+    &lt;Text id='' innerText='{text}'&gt;&lt;/Text&gt;
+    &lt;Input placeholder='{place}'&gt;&lt;/Input&gt;
+&lt;/ComponentFile&gt;
+</code></pre>
+</li>
+<li>
+<p>Make a <code>Component</code> instance</p>
+<pre><code>c = Component('component_path_without_extension_relative_to_component_folder')
+
+# Example
+c = Component(self.pyui,'form')
+c = Component(self.pyui,'dash/admin')
 </code></pre>
 </li>
 </ol>
-<h2 id="acessing-id-from-pyui">Acessing ID from PYUI</h2>
-<p>The ID are changed by adding the base <code>name</code> provided to keep uniqueness for each component.To get or set a component element the id is changed from <code>id</code> to <code>name_id</code></p>
-<p>For example consider this component again:</p>
-<pre><code>    &lt;ComponentFile&gt;
-    &lt;container&gt;
-        &lt;Text id="text_component" innerText="{prop}"&gt;&lt;/Text&gt;
-    &lt;/container&gt;
-    &lt;/ComponentFile&gt;
-</code></pre>
-<p>Now if we call the component from a layout file by:</p>
-<pre><code>    &lt;Component file="ex.xml" name="ex" prop="Sample Text"&gt;&lt;/Component&gt;
-</code></pre>
-<p>The id of <code>Text</code> will be changed from <code>text_component</code> to <code>ex_text_component</code> internally during compilation.</p>
-<h3 id="important-points-to-remember">Important points to Remember</h3>
+<p>Try to use <code>POSIX</code> style path, if not used <code>PYUI</code> auto converts it internally to keep the app cross platform.</p>
 <ol>
 <li>
-<p>The <code>name</code> is used as a base id for the components hence all id gets renamed to <code>name_actual_id_given</code> by the compiler internally.</p>
+<p>Adding Components to UI</p>
+<ul>
+<li>
+<p><strong>Appending at end:</strong> Use <code>c.appendComponent()</code> to add the component to end of the parent id.</p>
+<pre><code>new_id = c.appendComponent('parent_id') # defaults will be used
+</code></pre>
+<p>or,</p>
+<pre><code># props supplied
+new_id = c.appendComponent('parent_id', text='Hello World',place="New Placeholder")
+</code></pre>
+<p>You can use <code>new_id</code> as base <code>id</code> for the <code>component</code>. Just like statically dynamically all the components get <code>name mangled</code> with this <code>new_id</code>. See <a href="/PYUI%20XML%20LAYOUT%20GUIDE/04_PYUI_Components/">Reusing Layouts using Components</a> to know how to reference the inner elements</p>
 </li>
 <li>
-<p>If a id is kept blank (i.e <code>id=""</code>) then it will be assigned a id same as the <code>name</code> of the component.</p>
+<p><strong>Adding to Top of parent id:</strong> Use <code>c.addComponentTop()</code> to add component to top of the parent id.</p>
+<pre><code>new_id = c.addComponentTop('parent_id')
+</code></pre>
+</li>
+<li>
+<p><strong>Adding component after a element:</strong> Use <code>c.addComponentAfter()</code> to add a component after a certain element.</p>
+<pre><code>new_id = c.addComponentAfter('preceeding_id')
+</code></pre>
+</li>
+</ul>
 </li>
 </ol>
-<h3 id="acessing-components-inner-elements-from-python-runtime">Acessing Component's inner elements from PYTHON Runtime</h3>
-<pre><code>from PYUI.Package.PYUI import cpath
+<h2 id="deleting-a-component">Deleting a Component</h2>
+<p>Use <code>c.removeComponent()</code>, where <code>c</code> is a component instance (see above) to remove components from UI.</p>
+<h4 id="example">Example</h4>
+<pre><code>c.removeComponent('component_id')
 
-.....
-
-component_id =cpath('exampleComponent','txt') # &lt;- cpath is a function from PYUI.Package.PYUI helps to write name mangling cleanly
-
-e = Element(component_id,self.pyui) # &lt;- self.pyui is just the pyui instance
-
-.....
+# use the id returned during the creation of the thread to remove component
 </code></pre>
-<p><strong>Note:</strong> <code>PYUI 1.0.0</code> added <code>cpath</code> function. Rather than writing the mangled component names on your own use <code>cpath(component_name,component_element_id)</code> internally cpath with return the mangled id.</p>
+<p><strong>Note:</strong> This function can remove nodes even if it is not a <code>Component</code> so this can be reused in general to remove any <code>ID</code> from UI.</p>
+<h2 id="adding-custom-html-to-ui">Adding custom HTML to UI</h2>
+<p><code>PYUI 0.6</code> have loosened the strictness of direct HTML usage for better <code>DX</code> and considering how often users might need to add arbitary objects to UI. But, directly mutating HTML might be still harmfull as it is not verified by <code>Compiler</code>. So a safety approach is implemented by making <code>HTMLObject</code> class.</p>
+<pre><code>generator,id_of_obj = HTMLObject(self.pyui,tag_name,innerContent,**attributes)
+
+# Example
+
+generator,id_obj = HTMLObject(self.pyui,'p','Inner text',hidden=True)
+</code></pre>
+<p>This do not add the content to UI. To add this to UI you need to send a <code>syscall</code> </p>
+<ol>
+<li>
+<p>Make Send JSON</p>
+<pre><code>toSend = {'parent_id':parentID/preceeding ID,'html_to_add':generator(),"mode":mode}
+</code></pre>
+<ul>
+<li><strong>parent_id:</strong> Stores the parent id/preeceeding element id to which the Element is added.</li>
+<li><strong>html_to_add:</strong> This is the html string to be added. Use the generator function returned by <code>HTMLObject</code>.</li>
+<li>
+<p><strong>mode:</strong> Where to add the element</p>
+<ol>
+<li><strong>append:</strong> Added to the end of the parent id</li>
+<li><strong>top:</strong> Added to the TOP of the parent id</li>
+<li><strong>after:</strong> Added after a given preeceeding ID</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>Send the Syscall</p>
+<pre><code>self.pyui.sendSyscall('ADD_NODE_END',json.dumps(toSend))
+</code></pre>
+</li>
+</ol>
+<h3 id="few-important-notes">Few important notes</h3>
+<ol>
+<li>
+<p>In <code>HTMLObject</code> when the <code>generate()</code> function is called only then the given node id is registered, it is done so that there are no dangling nodes made until you actually push the html to layout.</p>
+</li>
+<li>
+<p>It is not strictly said that you can't add element inside element but it is better to not write InnerHTML manually and it is better to chain <code>HTMLObjects</code>. We will see this in next section. </p>
+</li>
+<li>
+<p>When <code>generate()</code> is called the node is auto-registered with <code>PYUI Python Runtime</code>, you are free to use them using <code>Element</code> class or using other ways to reference the node.</p>
+</li>
+<li>
+<p>However if the <code>Node</code> is deleted later you need to manually Unregister the node using <code>PYUI's</code> function (we will see it soon).</p>
+</li>
+<li>
+<p>The adding of custom HTML is intentally made bit elongated to make users use the <code>Component</code> as they are much safer. However for small cases like adding <code>option</code> to `selector', creating new component is a overkill and there this method is much more suitable.</p>
+</li>
+</ol>
+<h2 id="chaining-htmlobjects">Chaining HTMLObjects</h2>
+<p>Let us understand this using a example. For example we need to add <code>button</code> and a <code>p</code> inside a <code>div</code> and add the whole thing to UI</p>
+<ol>
+<li>
+<p>First start from inner Nodes and build up. First make the <code>button</code> and the <code>p</code></p>
+<pre><code>gen_btn,id_btn = HTMLObject(self.pyui,'button','Click ME')
+gen_p,id_p = HTMLObject(self.pyui,'p','Click here for magic!!!')
+
+# this generates the total html also registers the ID
+gen_innerhtml = gen_btn() + gen_p()
+</code></pre>
+</li>
+<li>
+<p>Make DIV and add the created HTML</p>
+<pre><code>gen_div,id_div = HTMLObject(self.pyui,'div',gen_innerhtml)
+</code></pre>
+</li>
+<li>
+<p>Send the syscall as done before to add the div to the UI</p>
+</li>
+</ol>
+<p><strong>Note:</strong> As soon as you generate the html and store it in <code>gen_innerhtml</code> the nodes are registered if you do not directly or indirectly push them to UI using syscall then those nodes will be <code>dangling</code> with no UI counterpart.</p>
+<h2 id="removing-html-contents">Removing HTML Contents</h2>
+<p>You can delete a HTML node using <code>REM_NODE</code> syscall and then use <code>self.pyui.UnRegisterUnmangedNode(id)</code> to clean the callbacks</p>
+<ol>
+<li>
+<p>Send the <code>REM_NODE</code> syscall to clean the node from UI.</p>
+<pre><code>toSend = {'id':id_to_delete}
+self.pyui.sendSyscall('REM_NODE',json.dumps(toSend))
+</code></pre>
+</li>
+<li>
+<p>Unregister the Node</p>
+<pre><code>self.pyui.UnRegisterUnmanagedNode('id')
+</code></pre>
+</li>
+</ol>
 
 
 
