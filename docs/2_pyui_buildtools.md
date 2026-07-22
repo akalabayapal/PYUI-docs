@@ -12,13 +12,13 @@ It gets hectic to compile layouts after each edit so PYUI comes with hotreloadin
 
 For Hot-Reloading a static layout:
 
-    python -m PYUI.buildtools --hotreload layouts/index.xml
+    python -m PYUI.manage --hotreload layouts/index.xml
 
 **Note:** Replace `layouts/index.xml` with any valid *pyui layout xml file*.
 
 If your layout uses styles that are not present in layouts/styles/ folder then 
 
-    python -m PYUI.buildtools --hotreload layouts/index.xml --stylepath <custom-style-folder>
+    python -m PYUI.manage --hotreload layouts/index.xml --stylepath <custom-style-folder>
 
 **Note:** Replace `layouts/index.xml` with any valid *pyui layout xml file*.
 
@@ -30,9 +30,9 @@ Any change to the xml file will be instantly reflected in the window
 
 Additionally, if you want to keep the layout window always on top of your screen, you would like to use `--keepontop` flag.
 
-    python -m PYUI.buildtools --hotreload <xml-layout-file-path> --keepontop
+    python -m PYUI.manage --hotreload <xml-layout-file-path> --keepontop
 
-**Note:** use `--settings settings.py` or  any custom PYUI settings file.(To learn about settings file visit:[Using settings.py](#))
+**Note:** use `--settings settings.py` or  any custom PYUI settings file.(To learn about settings file visit:[Configuring Build Pipeline](/4_configuring_build/))
 
 ## Compiling to python project
 
@@ -46,13 +46,13 @@ Visit your project directory
 
 Compile and run your project in one go
 
-    python -m PYUI.buildtools --compile ./ --run
+    python -m PYUI.manage --compile ./ --run
 
 To compile to python project without executing instantly
 
-    python -m PYUI.buildtools --compile ./ 
+    python -m PYUI.manage --compile ./ 
 
-**Note:** use `--settings settings.py` or  any custom PYUI settings file.(To learn about settings file visit:[Using settings.py](#))
+**Note:** use `--settings settings.py` or  any custom PYUI settings file.(To learn about settings file visit:[Configuring Build Pipeline](/4_configuring_build/))
 
 
 
@@ -78,7 +78,7 @@ Go to your project directory
 
 Compile to Exe:
 
-    python -m PYUI.buildtools --compileexe <project-directory> 
+    python -m PYUI.manage --compileexe <project-directory> 
 
 Important Extra flags for Executable compilation:
 
@@ -95,5 +95,5 @@ Important Extra flags for Executable compilation:
     1. Define the name of the exe
     2. DEFAULT:  **PYUICommonExecutable**
 
-4. **--settings** Any Custom PYUI settings file.(To learn about settings file visit:[Using settings.py](#))
+4. **--settings** Any Custom PYUI settings file.(To learn about settings file visit:[Configuring Build Pipeline](/4_configuring_build/))
 

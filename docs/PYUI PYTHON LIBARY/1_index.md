@@ -6,12 +6,12 @@ PYUI comes with `PYUI` standard libary. It provides the functionalities for:
     - Using Element Instance 
     - Using proceudral Legacy `PYUI` calls
 2. Event callbacks setting , resetting and stopping
-3. Registering and Unregistering `Custom Syscalls` to execute other JS functions
-4. Adding and Removing Components dynamically from Python Runtime
-5. Sending `Custom Syscalls` and handling there callbacks from JS and Python side.
-6. Thread Management Model ( `group`, `@background` , `commit`)
-8. Hooks and Pipelines
-
+3. Thread Management Model ( `group`, `@background` , `commit`)
+4. Hooks and Pipelines
+5. Registering and Unregistering `Custom Syscalls` to execute other JS functions
+6. Sending `Custom Syscalls` and handling there callbacks from JS and Python side.
+7. Adding and Removing Components dynamically from Python Runtime
+8. Other functions
 
 ## Architecture Summary
 

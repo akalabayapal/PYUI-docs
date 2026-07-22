@@ -21,3 +21,6 @@ After creating a project (Refer getting started) you get following folders and f
 
 **./layouts/css:** For adding custom styling with css
 
+**./sources:** Blank folder here you can add the extra assets for your app (images,config files,...)
+
+

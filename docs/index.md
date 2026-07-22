@@ -7,11 +7,10 @@ Welcome to the guide for **PYUI**. This and following pages will take you throug
  - PYUI Build Tools
  - PYUI XML rules and Tags
  - PYUI API reference
- -  Advance features (Python Hooks, Data streaming, Security, Auto Update and more)
- - Debugging and error catching by exploring temporary build folders
- - Adding custom tags and Syscalls and registering custom JS bundles
+ -  Advance features (Python Hooks, Data streaming)
+ - Adding custom tags and using syscall for binding
  - Customizing build pipeline 
- - Bundling chromium with project (configuration and downsides)
+ - Much more
 
 ## Architecture Philosophy
  This framework uses the elegance of webview (provided by **Pywebview**) and using strict xml layout for designing pages and python code for logic. This framework compiles the layouts into 2 parts:
