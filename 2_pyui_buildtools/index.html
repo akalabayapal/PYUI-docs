@@ -383,6 +383,60 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../4_configuring_build/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuring Build Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5_sources_folder/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PYUI Sources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -392,10 +446,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
   
@@ -413,8 +467,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -543,7 +597,35 @@
   
   
     <li class="md-nav__item">
-      <a href="../PYUI%20PYTHON%20LIBARY/5_component_lifecycle/" class="md-nav__link">
+      <a href="../PYUI%20PYTHON%20LIBARY/5_syscall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Syscalls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PYUI%20PYTHON%20LIBARY/6_component_lifecycle/" class="md-nav__link">
         
   
   
@@ -551,6 +633,34 @@
     
   
     Dynamic Component Lifecycle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PYUI%20PYTHON%20LIBARY/7_excess_func/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Other functions
   
 
     
@@ -586,10 +696,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
   
@@ -607,8 +717,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -822,20 +932,20 @@
 <h2 id="hot-reloading-layouts">Hot-Reloading Layouts</h2>
 <p>It gets hectic to compile layouts after each edit so PYUI comes with hotreloading feature to quickly rebuild your static layout file to show on screen.</p>
 <p>For Hot-Reloading a static layout:</p>
-<pre><code>python -m PYUI.buildtools --hotreload layouts/index.xml
+<pre><code>python -m PYUI.manage --hotreload layouts/index.xml
 </code></pre>
 <p><strong>Note:</strong> Replace <code>layouts/index.xml</code> with any valid <em>pyui layout xml file</em>.</p>
 <p>If your layout uses styles that are not present in layouts/styles/ folder then </p>
-<pre><code>python -m PYUI.buildtools --hotreload layouts/index.xml --stylepath &lt;custom-style-folder&gt;
+<pre><code>python -m PYUI.manage --hotreload layouts/index.xml --stylepath &lt;custom-style-folder&gt;
 </code></pre>
 <p><strong>Note:</strong> Replace <code>layouts/index.xml</code> with any valid <em>pyui layout xml file</em>.</p>
 <p><strong>Result:</strong>
 <img alt="HotReload Example" src="../assets/hotreload.png" /></p>
 <p>Any change to the xml file will be instantly reflected in the window</p>
 <p>Additionally, if you want to keep the layout window always on top of your screen, you would like to use <code>--keepontop</code> flag.</p>
-<pre><code>python -m PYUI.buildtools --hotreload &lt;xml-layout-file-path&gt; --keepontop
+<pre><code>python -m PYUI.manage --hotreload &lt;xml-layout-file-path&gt; --keepontop
 </code></pre>
-<p><strong>Note:</strong> use <code>--settings settings.py</code> or  any custom PYUI settings file.(To learn about settings file visit:<a href="#">Using settings.py</a>)</p>
+<p><strong>Note:</strong> use <code>--settings settings.py</code> or  any custom PYUI settings file.(To learn about settings file visit:<a href="/4_configuring_build/">Configuring Build Pipeline</a>)</p>
 <h2 id="compiling-to-python-project">Compiling to python project</h2>
 <p>It is slower to compile whole project to .exe as it reqires pyinstaller to build executable. However for faster loading and debuging purposes, you can compile your project to a ready to use project to load your dynamic app in a single command.It is recomended to use this than compiling to exe often after each result. Compiled exe will be idential to this exactly.</p>
 <p>Visit your project directory</p>
@@ -843,12 +953,12 @@
 </code></pre>
 <p><strong>Note:</strong> Replace <code>HelloWorldApp</code> with the name of your project directory.</p>
 <p>Compile and run your project in one go</p>
-<pre><code>python -m PYUI.buildtools --compile ./ --run
+<pre><code>python -m PYUI.manage --compile ./ --run
 </code></pre>
 <p>To compile to python project without executing instantly</p>
-<pre><code>python -m PYUI.buildtools --compile ./
+<pre><code>python -m PYUI.manage --compile ./
 </code></pre>
-<p><strong>Note:</strong> use <code>--settings settings.py</code> or  any custom PYUI settings file.(To learn about settings file visit:<a href="#">Using settings.py</a>)</p>
+<p><strong>Note:</strong> use <code>--settings settings.py</code> or  any custom PYUI settings file.(To learn about settings file visit:<a href="/4_configuring_build/">Configuring Build Pipeline</a>)</p>
 <p>A temporary folder will be created: <code>build/temp_xyz.abcd</code> (Check the last line of your terminal to get the folder) go to that folder and </p>
 <pre><code>python bootstrap.py
 </code></pre>
@@ -863,7 +973,7 @@
 </code></pre>
 <p><strong>Note:</strong> Replace 'HelloWorldApp' with the name of your project directory.</p>
 <p>Compile to Exe:</p>
-<pre><code>python -m PYUI.buildtools --compileexe &lt;project-directory&gt;
+<pre><code>python -m PYUI.manage --compileexe &lt;project-directory&gt;
 </code></pre>
 <p>Important Extra flags for Executable compilation:</p>
 <ol>
@@ -886,7 +996,7 @@
 </ol>
 </li>
 <li>
-<p><strong>--settings</strong> Any Custom PYUI settings file.(To learn about settings file visit:<a href="#">Using settings.py</a>)</p>
+<p><strong>--settings</strong> Any Custom PYUI settings file.(To learn about settings file visit:<a href="/4_configuring_build/">Configuring Build Pipeline</a>)</p>
 </li>
 </ol>
 
